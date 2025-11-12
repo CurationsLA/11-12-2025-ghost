@@ -933,7 +933,31 @@ mark, ::selection {
 
 /* Responsive */
 @media (max-width: 900px) {
-  .mobile-menu-toggle { display: block; }
+  /* Fix header grid for mobile */
+  .header-inner {
+    display: flex;                           /* Change from grid to flex */
+    justify-content: space-between;          /* Logo left, hamburger right */
+    align-items: center;
+    padding: 1rem 1.5rem;                    /* Better mobile padding */
+    min-height: 74px;
+  }
+
+  /* Logo stays on left */
+  .logo {
+    justify-self: auto;
+    flex-shrink: 0;
+  }
+
+  /* Hide desktop nav */
+  .main-nav {
+    justify-self: auto;
+  }
+
+  /* Show mobile menu toggle */
+  .mobile-menu-toggle {
+    display: block;
+    flex-shrink: 0;
+  }
 
   /* Hide secondary nav on mobile - items will be in hamburger menu */
   .secondary-nav-wrapper {
@@ -956,6 +980,7 @@ mark, ::selection {
     transform: translateY(-100%);
     transition: transform var(--transition);
     z-index: 99;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add shadow for depth */
   }
   .primary-nav.open { transform: translateY(0); }
 
