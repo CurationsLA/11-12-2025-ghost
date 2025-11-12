@@ -1,0 +1,65 @@
+{
+  "name": "super-secret-stuff",
+  "description": "CURATIONSLA Super Secret SEO AI Discovery Enhanced Theme - Good Vibes × Hyper-Local LA Culture Newsletter with Advanced AI Discovery Optimization",
+  "version": "11.0.2-SUPER-SECRET-SEO-AI-ENHANCED-DISCOVERY-FIXED",
+  "engines": {
+    "ghost": ">=6.0.0"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "CURATIONS × GARRETT NOVA",
+    "email": "hello@curations.cc", 
+    "url": "https://la.curations.cc"
+  },
+  "keywords": [
+    "ghost",
+    "theme", 
+    "ghost-theme",
+    "newsletter",
+    "curationsla",
+    "local-news"
+  ],
+  "config": {
+    "posts_per_page": 12,
+    "image_sizes": {
+      "xs": { "width": 160 },
+      "s": { "width": 320 },
+      "m": { "width": 600 },
+      "l": { "width": 960 },
+      "xl": { "width": 1200 },
+      "xxl": { "width": 2000 }
+    },
+    "custom": {
+      "accent_color": {
+        "type": "color",
+        "default": "#EBF99A", 
+        "description": "Primary accent color for highlights and buttons"
+      },
+      "newsletter_accent_color": {
+        "type": "color",
+        "default": "#EBF99A", 
+        "description": "Newsletter accent color (alias for backward compatibility)"
+      },
+      "widgets_on_posts": {
+        "type": "boolean",
+        "default": false,
+        "description": "Show widgets on posts"
+      },
+      "show_newsletter_signup": {
+        "type": "boolean",
+        "default": true,
+        "description": "Display newsletter signup form"
+      },
+      "footer_text": {
+        "type": "text",
+        "default": "🤙 Good Vibes curated with 💜 in LA by 👋 and 🤖 at",
+        "description": "Custom footer tagline text"
+      },
+      "brand_url": {
+        "type": "text", 
+        "default": "https://curations.cc",
+        "description": "Brand website URL"
+      }
+    }
+  }
+}

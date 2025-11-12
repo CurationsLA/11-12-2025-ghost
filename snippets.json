@@ -1,0 +1,30 @@
+[
+  {
+    "name": "HOV Lanes",
+    "mobiledoc": "{\"version\":\"0.3.1\",\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"{{> \\\"newsletter/hov-lanes\\\"}}\"}]],\"markups\":[],\"sections\":[[10,0]],\"payload\":{}}"
+  },
+  {
+    "name": "Hero Weather Email",
+    "mobiledoc": "{\"version\":\"0.3.1\",\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"{{> \\\"newsletter/hero-weather-email\\\"}}\"}]],\"markups\":[],\"sections\":[[10,0]],\"payload\":{}}"
+  },
+  {
+    "name": "Hero Surf Email",
+    "mobiledoc": "{\"version\":\"0.3.1\",\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"{{> \\\"newsletter/hero-surf-email\\\"}}\"}]],\"markups\":[],\"sections\":[[10,0]],\"payload\":{}}"
+  },
+  {
+    "name": "Hero Standings Email",
+    "mobiledoc": "{\"version\":\"0.3.1\",\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"{{> \\\"newsletter/hero-standings-email\\\"}}\"}]],\"markups\":[],\"sections\":[[10,0]],\"payload\":{}}"
+  },
+  {
+    "name": "Sponsor Slot",
+    "mobiledoc": "{\"version\":\"0.3.1\",\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"{{> \\\"newsletter/sponsor-slot\\\"}}\"}]],\"markups\":[],\"sections\":[[10,0]],\"payload\":{}}"
+  },
+  {
+    "name": "CTA Deeper Dive",
+    "mobiledoc": "{\"version\":\"0.3.1\",\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"{{> \\\"newsletter/cta-deeper-dive\\\"}}\"}]],\"markups\":[],\"sections\":[[10,0]],\"payload\":{}}"
+  },
+  {
+    "name": "Newsletter Brief Full Block",
+    "mobiledoc": "{\"version\":\"0.3.1\",\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"{{> \\\"newsletter/newsletter-brief\\\"}}\"}]],\"markups\":[],\"sections\":[[10,0]],\"payload\":{}}"
+  }
+]

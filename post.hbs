@@ -1,0 +1,58 @@
+{{!< default}}
+
+<main class="site-main post-main">
+  {{#post}}
+  <article class="post-full framed-article {{post_class}}" data-post-id="{{id}}">
+    <header class="post-header-frame">
+      <h1 class="post-full-title">
+        {{#if title}}{{title}}{{else}}[untitled draft]{{/if}}
+      </h1>
+      <div class="post-full-meta">
+        <time datetime="{{date published_at format="YYYY-MM-DD"}}">{{date published_at format="MMMM D, YYYY"}}</time>
+
+        {{#if primary_tag}}
+          <span class="latest-item-tag">
+            {{#match primary_tag.slug "newsletters"}}🤙 {{/match}}
+            {{#match primary_tag.slug "eats"}}🍟 {{/match}}
+            {{#match primary_tag.slug "events"}}📆 {{/match}}
+            {{#match primary_tag.slug "curators"}}👋 {{/match}}
+            {{#match primary_tag.slug "guides"}}🗺️ {{/match}}
+            {{primary_tag.name}}
+          </span>
+        {{/if}}
+
+        {{#if authors}}
+          {{#foreach authors}}
+            <span class="post-author">{{name}}</span>
+          {{/foreach}}
+        {{/if}}
+      </div>
+    </header>
+
+    {{#if feature_image}}
+      <figure class="post-feature-frame">
+        <img src="{{feature_image}}" alt="{{title}}">
+      </figure>
+    {{/if}}
+
+    <div class="post-body-frame">
+      <div class="post-content" data-original="true">
+        {{content}}
+      </div>
+
+      {{#if @custom.widgets_on_posts}}
+        <div class="post-widgets-holder hidden"></div>
+      {{/if}}
+
+      <section class="post-comments" aria-label="Comments">
+        {{ghost_comments}}
+      </section>
+      
+      <!-- MORE → Link in bottom right -->
+      <div class="post-more-link">
+        <a href="{{@site.url}}" class="more-link">MORE →</a>
+      </div>
+    </div>
+  </article>
+  {{/post}}
+</main>

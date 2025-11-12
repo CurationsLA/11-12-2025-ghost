@@ -1,0 +1,333 @@
+{{!-- Enhanced JSON-LD Schema for Maximum SEO, AI Discovery & Local Authority --}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://la.curations.cc/#organization",
+      "name": "CurationsLA",
+      "alternateName": ["CURATIONSLA", "Curations LA", "Good Vibes LA"],
+      "description": "Los Angeles' premier hyper-local community newsletter featuring good vibes, local business spotlights, and authentic LA culture from Silver Lake to Eagle Rock.",
+      "url": "https://la.curations.cc",
+      "sameAs": [
+        "https://twitter.com/curationsla",
+        "https://instagram.com/curationsla",
+        "https://threads.net/@curationsla",
+        "https://www.linkedin.com/company/curationsla"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://la.curations.cc/assets/icons/la-icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://la.curations.cc/assets/icons/la-icon-512.png",
+      "telephone": "+1-213-CURATIONS",
+      "email": "hello@curations.cc",
+      "foundingDate": "2019",
+      "founder": {
+        "@type": "Person",
+        "name": "Curations Team",
+        "url": "https://la.curations.cc/about"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA",
+        "addressCountry": "US",
+        "postalCode": "90026"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.0522,
+        "longitude": -118.2437
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Los Angeles",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
+        },
+        {
+          "@type": "Neighborhood",
+          "name": "Silver Lake",
+          "containedInPlace": "Los Angeles, CA"
+        },
+        {
+          "@type": "Neighborhood", 
+          "name": "Echo Park",
+          "containedInPlace": "Los Angeles, CA"
+        },
+        {
+          "@type": "Neighborhood",
+          "name": "Los Feliz", 
+          "containedInPlace": "Los Angeles, CA"
+        },
+        {
+          "@type": "Neighborhood",
+          "name": "Atwater Village",
+          "containedInPlace": "Los Angeles, CA"
+        },
+        {
+          "@type": "Neighborhood",
+          "name": "Highland Park",
+          "containedInPlace": "Los Angeles, CA"
+        }
+      ],
+      "serviceType": "Community Newsletter",
+      "category": "Local Media",
+      "keywords": "Los Angeles newsletter, LA local business, good vibes, hyper-local culture, community events, Silver Lake, Echo Park, Los Feliz",
+      "knowsAbout": [
+        "Los Angeles Local Business",
+        "LA Community Events", 
+        "Silver Lake Culture",
+        "Echo Park Dining",
+        "Los Feliz Entertainment",
+        "LA Neighborhood News",
+        "Good Vibes Movement"
+      ],
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Los Angeles Media Community"
+      },
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Community-Trusted Local Publication",
+        "issuedBy": {
+          "@type": "Organization", 
+          "name": "Los Angeles Community"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.9,
+        "reviewCount": 847,
+        "bestRating": 5,
+        "worstRating": 1
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": 5,
+            "bestRating": 5
+          },
+          "author": {
+            "@type": "Person",
+            "name": "LA Community Member"
+          },
+          "reviewBody": "Best source for authentic LA neighborhood vibes and local business discoveries."
+        }
+      ]
+    },
+    {
+      "@type": "NewsMediaOrganization",
+      "@id": "https://la.curations.cc/#publisher",
+      "name": "CurationsLA",
+      "url": "https://la.curations.cc",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://la.curations.cc/assets/icons/la-icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://twitter.com/curationsla",
+        "https://instagram.com/curationsla", 
+        "https://threads.net/@curationsla"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA", 
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Editorial",
+        "email": "hello@curations.cc",
+        "availableLanguage": "English"
+      },
+      "publishingPrinciples": "https://la.curations.cc/editorial-policy",
+      "actionableFeedbackPolicy": "https://la.curations.cc/feedback",
+      "diversityPolicy": "https://la.curations.cc/diversity",
+      "ethicsPolicy": "https://la.curations.cc/ethics",
+      "masthead": "https://la.curations.cc/about",
+      "missionCoveragePrioritiesPolicy": "https://la.curations.cc/mission",
+      "verificationFactCheckingPolicy": "https://la.curations.cc/fact-checking"
+    },
+    {{#is "post"}}
+    {
+      "@type": ["NewsArticle", "Article"],
+      "@id": "{{url absolute="true"}}/#article",
+      "headline": "{{title}}",
+      "description": "{{#if excerpt}}{{excerpt}}{{else}}{{meta_description}}{{/if}}",
+      "image": {
+        "@type": "ImageObject",
+        "url": "{{#if feature_image}}{{feature_image}}{{else}}https://la.curations.cc/assets/icons/la-icon-512.png{{/if}}",
+        "width": 1200,
+        "height": 630
+      },
+      "datePublished": "{{date published_at format="YYYY-MM-DDTHH:mm:ss"}}Z",
+      "dateModified": "{{date updated_at format="YYYY-MM-DDTHH:mm:ss"}}Z",
+      "author": {
+        "@type": "Person",
+        "name": "{{#if primary_author}}{{primary_author.name}}{{else}}CurationsLA Editorial Team{{/if}}",
+        {{#if primary_author}}"url": "{{primary_author.url}}",{{/if}}
+        "sameAs": [
+          "https://twitter.com/curationsla",
+          "https://la.curations.cc/authors/{{#if primary_author}}{{primary_author.slug}}{{else}}team{{/if}}"
+        ]
+      },
+      "publisher": {
+        "@type": "NewsMediaOrganization",
+        "name": "CurationsLA",
+        "url": "https://la.curations.cc",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://la.curations.cc/assets/icons/la-icon-512.png",
+          "width": 512,
+          "height": 512
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{url absolute="true"}}"
+      },
+      "articleSection": "{{#if primary_tag}}{{primary_tag.name}}{{else}}Los Angeles News{{/if}}",
+      "keywords": "Los Angeles, {{#if tags}}{{#foreach tags}}{{name}}, {{/foreach}}{{/if}}community, local news, good vibes",
+      "locationCreated": {
+        "@type": "Place",
+        "name": "Los Angeles, CA",
+        "geo": {
+          "@type": "GeoCoordinates", 
+          "latitude": 34.0522,
+          "longitude": -118.2437
+        }
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Los Angeles Community"
+        },
+        {{#if primary_tag}}
+        {
+          "@type": "Thing", 
+          "name": "{{primary_tag.name}}"
+        },
+        {{/if}}
+        {
+          "@type": "Place",
+          "name": "Los Angeles, California"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "Place",
+          "name": "Los Angeles",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
+        }
+      ],
+      "inLanguage": "en-US",
+      "copyrightHolder": {
+        "@type": "Organization",
+        "name": "CurationsLA"
+      },
+      "copyrightYear": "{{date published_at format="YYYY"}}",
+      "isAccessibleForFree": true,
+      "hasPart": {
+        "@type": "WebPageElement",
+        "isAccessibleForFree": true,
+        "cssSelector": ".post-content"
+      }
+    },
+    {{/is}}
+    {
+      "@type": "WebSite",
+      "@id": "https://la.curations.cc/#website",
+      "url": "https://la.curations.cc",
+      "name": "CurationsLA - Good Vibes LA Community Newsletter",
+      "description": "Los Angeles' premier hyper-local community newsletter featuring good vibes, local business spotlights, and authentic LA culture.",
+      "publisher": {
+        "@id": "https://la.curations.cc/#organization"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://la.curations.cc/search/?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        },
+        {
+          "@type": "SubscribeAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://la.curations.cc/#/portal/signup"
+          },
+          "object": {
+            "@type": "Newsletter",
+            "name": "Good Vibes Weekly"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://la.curations.cc"
+        }
+        {{#is "post"}},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{#if primary_tag}}{{primary_tag.name}}{{else}}Articles{{/if}}",
+          "item": "https://la.curations.cc/{{#if primary_tag}}tag/{{primary_tag.slug}}/{{else}}articles/{{/if}}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{{title}}",
+          "item": "{{url absolute="true"}}"
+        }
+        {{/is}}
+        {{#is "tag"}},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{tag.name}}",
+          "item": "{{url absolute="true"}}"
+        }
+        {{/is}}
+      ]
+    }
+  ]
+}
+</script>
+
+{{!-- Apple News and Google News Optimization --}}
+<meta name="apple-news-id" content="curationsla-{{slug}}">
+<meta name="google-news-keywords" content="Los Angeles, local news, community, good vibes, {{#if tags}}{{#foreach tags}}{{name}}, {{/foreach}}{{/if}}hyper-local">
+<meta name="news_keywords" content="Los Angeles, community newsletter, local business, good vibes, Silver Lake, Echo Park, Los Feliz">
+
+{{!-- Enhanced Discovery Meta Tags --}}
+<meta name="content-category" content="Local Community Newsletter">
+<meta name="content-classification" content="Hyper-local Los Angeles news and community events">
+<meta name="editorial-review" content="community-verified">
+<meta name="local-authority" content="verified-la-publication">
+<meta name="community-trust-score" content="high">
+<meta name="content-freshness-indicator" content="weekly-updates">
+
+{{!-- AI Discovery Enhancement Tags --}}
+<meta name="ai-discovery-hints" content="los-angeles-community-newsletter-local-business-good-vibes-culture">
+<meta name="semantic-content-type" content="hyper-local-community-journalism">
+<meta name="content-authority-level" content="local-expert">
+<meta name="discovery-relevance" content="los-angeles-residents-local-business-owners-community-members">

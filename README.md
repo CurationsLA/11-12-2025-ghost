@@ -1,2 +1,2 @@
-# 11-12-2025-ghost
-current active ghost theme
+# 11-11-25-ghost
+Ghost CMS zip file for CurationsLA

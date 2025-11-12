@@ -1,0 +1,40 @@
+{{!< default}}
+
+<main class="site-main post-main">
+  {{#post}}
+  <article class="post-full framed-article {{post_class}} page-article" data-page-id="{{id}}">
+
+    {{!-- Show title + feature image only if Ghost page setting is enabled --}}
+    {{#if @page.show_title_and_feature_image}}
+      <header class="post-header-frame">
+        <h1 class="post-full-title">
+          {{#if title}}{{title}}{{else}}[untitled page]{{/if}}
+        </h1>
+        <div class="post-full-meta">
+          <time datetime="{{date published_at format="YYYY-MM-DD"}}">{{date published_at format="MMMM D, YYYY"}}</time>
+          {{#if authors}}
+            {{#foreach authors}}
+              <span class="post-author">{{name}}</span>
+            {{/foreach}}
+          {{/if}}
+        </div>
+      </header>
+      {{#if feature_image}}
+        <figure class="post-feature-frame">
+          <img src="{{feature_image}}" alt="{{title}}">
+        </figure>
+      {{/if}}
+    {{/if}}
+
+    <div class="post-body-frame">
+      <div class="post-content" data-original="true">
+        {{content}}
+      </div>
+
+      {{#if @custom.widgets_on_posts}}
+        <div class="post-widgets-holder hidden"></div>
+      {{/if}}
+    </div>
+  </article>
+  {{/post}}
+</main>

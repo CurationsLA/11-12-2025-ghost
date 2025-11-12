@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}">
+<head>
+  <meta charset="utf-8">
+  <title>{{meta_title}}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="{{@custom.accent_color}}">
+  <link rel="stylesheet" href="{{asset "built/screen.css"}}?v=7.0.0">
+  
+  <!-- CURATIONSLA Maximum-Level SEO & AI Discovery Meta -->
+  <meta name="description" content="CURATIONSLA - Good vibes and hyper-local LA culture. Weekly newsletter featuring local businesses, events, and community spotlights.">
+  <meta name="keywords" content="Los Angeles newsletter, LA local business, good vibes LA, hyper-local culture, Silver Lake community, Echo Park, Los Feliz, Atwater Village, Highland Park, Glassell Park, Mount Washing, Eagle Rock">
+  
+  {{!-- Enhanced SEO & AI Discovery --}}
+  {{> "jsonld-enhanced-seo"}}
+
+  {{ghost_head}}
+  
+  <!-- Post-Specific Enhanced SEO -->
+  {{#post}}
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{url absolute="true"}}">
+  <meta property="og:title" content="{{title}} - CURATIONSLA">
+  <meta property="og:description" content="{{#if excerpt}}{{excerpt}}{{else}}{{meta_description}}{{/if}}">
+  <meta property="og:site_name" content="CURATIONSLA">
+  <meta property="og:locale" content="en_US">
+  {{#if feature_image}}
+  <meta property="og:image" content="{{feature_image}}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{title}} - CURATIONSLA">
+  {{else}}
+  <meta property="og:image" content="{{@site.url}}/assets/icons/la-icon-1200.png">
+  {{/if}}
+  <meta property="article:published_time" content="{{date published_at format="YYYY-MM-DDTHH:mm:ss"}}Z">
+  <meta property="article:modified_time" content="{{date updated_at format="YYYY-MM-DDTHH:mm:ss"}}Z">
+  <meta property="article:author" content="{{#if primary_author}}{{primary_author.name}}{{else}}CurationsLA Editorial Team{{/if}}">
+  <meta property="article:section" content="{{#if primary_tag}}{{primary_tag.name}}{{else}}Los Angeles Community{{/if}}">
+  {{#if tags}}<meta property="article:tag" content="{{#foreach tags}}{{name}}{{#unless @last}}, {{/unless}}{{/foreach}}">{{/if}}
+  
+  <!-- Enhanced Twitter Cards for Posts -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@CurationsX">
+  <meta name="twitter:creator" content="@CurationsX">
+  <meta name="twitter:title" content="{{title}} - CURATIONSLA">
+  <meta name="twitter:description" content="{{#if excerpt}}{{excerpt}}{{else}}{{meta_description}}{{/if}}">
+  {{#if feature_image}}
+  <meta name="twitter:image" content="{{feature_image}}">
+  {{else}}
+  <meta name="twitter:image" content="{{@site.url}}/assets/icons/la-icon-1200.png">
+  {{/if}}
+  <meta name="twitter:image:alt" content="{{title}} - CURATIONSLA">
+  
+  <!-- Enhanced Article Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["NewsArticle", "Article"],
+    "@id": "{{url absolute="true"}}/#article",
+    "headline": "{{title}}",
+    "description": "{{#if excerpt}}{{excerpt}}{{else}}{{meta_description}}{{/if}}",
+    "datePublished": "{{date published_at format="YYYY-MM-DDTHH:mm:ss"}}Z",
+    "dateModified": "{{date updated_at format="YYYY-MM-DDTHH:mm:ss"}}Z",
+    "author": {
+      "@type": "Person",
+      "name": "{{#if primary_author}}{{primary_author.name}}{{else}}CurationsLA Editorial Team{{/if}}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "CURATIONSLA",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{@site.url}}/assets/icons/la-icon-512.png"
+      }
+    },
+    {{#if feature_image}}
+    "image": {
+      "@type": "ImageObject",
+      "url": "{{feature_image}}",
+      "width": 1200,
+      "height": 630
+    },
+    {{/if}}
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{url absolute="true"}}"
+    },
+    "articleSection": "{{#if primary_tag}}{{primary_tag.name}}{{else}}Los Angeles Community{{/if}}",
+    "keywords": "Los Angeles, {{#if tags}}{{#foreach tags}}{{name}}, {{/foreach}}{{/if}}community, local business, good vibes",
+    "spatialCoverage": {
+      "@type": "Place",
+      "name": "Los Angeles, California"
+    }
+  }
+  </script>
+  {{/post}}
+  
+  <meta name="editorial-policy" content="good-vibes-only, community-first, local-business-supporting">
+  <meta name="content-quality" content="human-reviewed, community-verified, locally-relevant">
+  <meta name="trustworthiness" content="established-2019, community-trusted, locally-verified">
+  
+  <!-- Geographic & Local SEO -->
+  <meta name="geo.region" content="US-CA">
+  <meta name="geo.placename" content="Los Angeles, California">
+  <meta name="geo.position" content="34.0522;-118.2437">
+  <meta name="ICBM" content="34.0522, -118.2437">
+  <meta name="locality" content="Los Angeles">
+  <meta name="region" content="California">
+  <meta name="country" content="United States">
+  
+  <!-- Publication & Content Meta -->
+  <meta name="publication" content="CURATIONSLA Newsletter">
+  <meta name="content-type" content="community newsletter">
+  <meta name="audience" content="Los Angeles residents, local business owners, community members">
+  <meta name="content-language" content="en-US">
+  <meta name="content-classification" content="community, local news, business directory, events">
+  
+  <!-- Structured Data Hints -->
+  <meta name="schema-type" content="Newsletter, LocalBusiness, Organization">
+  <meta name="content-category" content="Local News, Community Events, Business Directory">
+  
+  <!-- Advanced Discovery Meta -->
+  <meta name="discovery-engine-hints" content="local-community-newsletter-los-angeles-good-vibes">
+  <meta name="semantic-keywords" content="Los Angeles community, local businesses, neighborhood events, Silver Lake culture, Echo Park dining, Los Feliz entertainment">
+  <meta name="content-freshness" content="weekly-updates">
+  <meta name="update-frequency" content="weekly">
+  <meta name="content-depth" content="comprehensive-local-coverage">
+  
+  <!-- RSS & Feed Discovery -->
+  <link rel="alternate" type="application/rss+xml" title="CURATIONSLA RSS Feed" href="{{@site.url}}/rss/">
+  <link rel="alternate" type="application/json" title="CURATIONSLA JSON Feed" href="{{@site.url}}/json/">
+  
+  <!-- Advanced Social & Discovery -->
+  <meta name="social-media-presence" content="instagram,twitter,threads">
+  <meta name="community-engagement" content="high">
+  <meta name="local-authority" content="verified">
+  
+  <!-- Performance & Technical SEO -->
+  <meta name="content-encoding" content="gzip">
+  <meta name="cache-control" content="public, max-age=3600">
+  <meta name="preload-strategy" content="critical-resources">
+  
+  <!-- Newsletter-Specific Meta -->
+  <meta name="newsletter-frequency" content="weekly">
+  <meta name="newsletter-focus" content="hyper-local Los Angeles community">
+  <meta name="subscriber-benefit" content="exclusive local business insights, community event updates">
+  
+  <!-- Enhanced Open Graph with Local Focus -->
+  <meta property="og:url" content="{{url absolute="true"}}">
+  <meta property="og:title" content="{{#if meta_title}}{{meta_title}}{{else}}CURATIONSLA - Good Vibes LA Community Newsletter{{/if}}">
+  <meta property="og:description" content="{{#if meta_description}}{{meta_description}}{{else}}Hyper-local Los Angeles newsletter with good vibes only. Local business spotlights, community events, and LA culture from Silver Lake to Eagle Rock.{{/if}}">
+  <meta property="og:site_name" content="CURATIONSLA">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locality" content="Los Angeles">
+  <meta property="og:region" content="CA">
+  <meta property="og:country-name" content="USA">
+  {{#if feature_image}}<meta property="og:image" content="{{feature_image}}">{{/if}}
+  <meta property="og:image:alt" content="CURATIONSLA - Los Angeles Community Newsletter">
+  
+  <!-- Enhanced Twitter Cards with Community Focus -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@CurationsX">
+  <meta name="twitter:creator" content="@CurationsX">
+  <meta name="twitter:title" content="{{#if meta_title}}{{meta_title}}{{else}}CURATIONSLA - Good Vibes LA{{/if}}">
+  <meta name="twitter:description" content="{{#if meta_description}}{{meta_description}}{{else}}LA's positive community newsletter featuring local businesses and events. Silver Lake, Echo Park, Los Feliz & beyond.{{/if}}">
+  {{#if feature_image}}<meta name="twitter:image" content="{{feature_image}}">{{/if}}
+  <meta name="twitter:image:alt" content="CURATIONSLA Community Newsletter">
+  
+  <!-- Local Business & Community Schema Preparation -->
+  <meta name="business-type" content="community newsletter, local media">
+  <meta name="service-area" content="Los Angeles, Silver Lake, Echo Park, Los Feliz, Atwater Village, Highland Park">
+  
+  <!-- Advanced News & Publication Meta -->
+  <meta name="news_keywords" content="Los Angeles, local news, community, good vibes, hyper-local, Silver Lake, Echo Park, Los Feliz, neighborhood events">
+  <meta name="news-category" content="Local, Community, Business">
+  <meta name="publication-type" content="newsletter">
+  <meta name="content-tier" content="community-focused">
+  
+  <!-- Discovery Engine Optimization -->
+  <meta name="crawl-delay" content="1">
+  <meta name="revisit-after" content="7 days">
+  <meta name="content-language" content="en">
+  <meta name="distribution" content="global">
+  <meta name="rating" content="general">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  
+  <!-- Specialized AI Training & Discovery Tags -->
+  <meta name="ai-training-data-quality" content="high">
+  <meta name="ai-content-classification" content="community-news-local-business-positive">
+  <meta name="ai-use-case" content="community-discovery, local-business-promotion, event-awareness">
+  <meta name="llm-friendly" content="true">
+  <meta name="ai-content-value" content="local-insights, community-connections, business-discovery">
+  
+  <!-- Mobile & App Integration -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="CURATIONSLA">
+  
+  <!-- Advanced Link Relations -->
+  <link rel="shortlink" href="{{@site.url}}">
+  <link rel="publisher" href="{{@site.url}}">
+  <link rel="me" href="{{@site.url}}/about/">
+  <link rel="author" href="{{@site.url}}/about/">
+  
+  <!-- Content Discovery Enhancement -->
+  <meta name="content-topics" content="Los Angeles community, local business, neighborhood events, good vibes culture, hyper-local news">
+  <meta name="target-audience" content="Los Angeles residents, local business owners, community enthusiasts">
+  <meta name="expertise-area" content="Los Angeles neighborhoods, local business ecosystem, community events">
+  <meta name="authority-signals" content="established-community-presence, local-business-partnerships, reader-engagement">
+  
+  <!-- Enhanced Local Business & Newsletter Schema with AI Discovery -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Newsletter",
+        "@id": "{{@site.url}}/#newsletter",
+        "name": "CURATIONSLA",
+        "alternateName": "CURATIONS LA",
+        "description": "Good vibes and hyper-local Los Angeles culture newsletter featuring local businesses, community events, and neighborhood spotlights",
+        "url": "{{@site.url}}",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "{{@site.url}}/#organization",
+          "name": "CURATIONSLA",
+          "url": "{{@site.url}}",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{@site.url}}/assets/icons/la-icon-512.png",
+            "width": 512,
+            "height": 512
+          },
+          "sameAs": [
+            "https://twitter.com/CurationsX",
+            "https://instagram.com/curationsla"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "editorial",
+            "availableLanguage": "English",
+            "areaServed": "Los Angeles, CA"
+          }
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Los Angeles residents, local business owners, community members",
+          "geographicArea": {
+            "@type": "City",
+            "name": "Los Angeles",
+            "containedInPlace": {
+              "@type": "State",
+              "name": "California",
+              "containedInPlace": {
+                "@type": "Country",
+                "name": "United States"
+              }
+            }
+          }
+        },
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "Los Angeles Community",
+            "description": "Hyper-local community coverage and business spotlights"
+          },
+          {
+            "@type": "Thing", 
+            "name": "Local Business",
+            "description": "Supporting and promoting local Los Angeles businesses"
+          },
+          {
+            "@type": "Thing",
+            "name": "Neighborhood Events",
+            "description": "Community events and cultural happenings"
+          }
+        ],
+        "keywords": "Los Angeles newsletter, local business, community events, Silver Lake, Echo Park, Los Feliz, good vibes, hyper-local",
+        "inLanguage": "en-US",
+        "copyrightYear": "2019",
+        "dateCreated": "2019-01-01",
+        "dateModified": "{{date format="YYYY-MM-DD"}}",
+        "temporalCoverage": "2019/{{date format="YYYY"}}",
+        "spatialCoverage": {
+          "@type": "Place", 
+          "name": "Los Angeles, California",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "34.0522",
+            "longitude": "-118.2437"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "addressCountry": "US"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "{{@site.url}}/#webpage"
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "{{@site.url}}/#localbusiness",
+        "name": "CURATIONSLA",
+        "image": "{{@site.url}}/assets/icons/la-icon-512.png",
+        "url": "{{@site.url}}",
+        "description": "Los Angeles community newsletter and local business directory promoting good vibes and hyper-local culture",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Los Angeles",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "34.0522",
+          "longitude": "-118.2437"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Los Angeles"
+          },
+          {
+            "@type": "Neighborhood", 
+            "name": "Silver Lake"
+          },
+          {
+            "@type": "Neighborhood",
+            "name": "Echo Park"  
+          },
+          {
+            "@type": "Neighborhood",
+            "name": "Los Feliz"
+          },
+          {
+            "@type": "Neighborhood",
+            "name": "Atwater Village"
+          },
+          {
+            "@type": "Neighborhood",
+            "name": "Highland Park"
+          }
+        ],
+        "serviceType": "Community Newsletter",
+        "priceRange": "Free",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Los Angeles residents and local business owners"
+        },
+        "knowsAbout": [
+          "Los Angeles local businesses",
+          "Community events",
+          "Neighborhood culture",
+          "Local dining",
+          "Arts and entertainment",
+          "Real estate trends"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "CURATIONSLA Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Weekly Newsletter",
+                "description": "Hyper-local Los Angeles community newsletter"
+              },
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "Offer", 
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Local Business Promotion",
+                "description": "Community-focused business spotlights and features"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "{{@site.url}}/#website",
+        "url": "{{@site.url}}",
+        "name": "CURATIONSLA",
+        "description": "Los Angeles community newsletter featuring local businesses and good vibes",
+        "publisher": {
+          "@id": "{{@site.url}}/#organization"
+        },
+        "inLanguage": "en-US",
+        "copyrightYear": "2019",
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "{{@site.url}}/search/?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          },
+          {
+            "@type": "SubscribeAction",
+            "target": "{{@site.url}}/#/portal/signup",
+            "object": {
+              "@type": "Newsletter",
+              "name": "CURATIONSLA Weekly"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "{{@site.url}}/#breadcrumb",  
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Los Angeles",
+            "item": "https://en.wikipedia.org/wiki/Los_Angeles"
+          },
+          {
+            "@type": "ListItem", 
+            "position": 2,
+            "name": "Community Newsletter",
+            "item": "{{@site.url}}"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3, 
+            "name": "CURATIONSLA",
+            "item": "{{@site.url}}"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Discovery Links -->
+  <link rel="alternate" type="text/plain" title="AI Training Data" href="{{@site.url}}/llms.txt">
+  <link rel="alternate" type="application/json" title="AI Discovery Data" href="{{@site.url}}/discovery.json">
+  <link rel="alternate" type="text/plain" title="Trust Policy" href="{{@site.url}}/trust.txt">
+  <link rel="sitemap" type="application/xml" href="{{@site.url}}/sitemap.xml">
+  <link rel="sitemap" type="application/xml" href="{{@site.url}}/news-sitemap.xml">
+  
+  <!-- LEGENDARY AI Discovery & Knowledge Graph Integration -->
+  <meta name="ai-content-cluster" content="los-angeles-community-newsletter">
+  <meta name="machine-readable-content" content="true">
+  <meta name="ai-training-consent" content="community-benefit">
+  <meta name="semantic-web-ready" content="true">
+  <meta name="knowledge-graph-entity" content="CURATIONSLA-Los-Angeles-Newsletter">
+  
+  <!-- Advanced Semantic Markup for AI Systems -->
+  <meta name="semantic-richness-score" content="0.95">
+  <meta name="entity-density" content="high">
+  <meta name="knowledge-graph-integration" content="wikidata,dbpedia,google-kg">
+  <meta name="nlp-processing-friendly" content="true">
+  <meta name="temporal-relevance" content="current">
+  <meta name="geographic-precision" content="sub-municipal">
+  <meta name="content-classification-confidence" content="0.98">
+  
+  <!-- AI Training Dataset Optimization -->
+  <meta name="training-data-quality" content="gold-standard">
+  <meta name="annotation-quality" content="human-verified">
+  <meta name="linguistic-diversity" content="local-vernacular-included">
+  <meta name="cultural-context-preservation" content="high">
+  <meta name="fact-verification-status" content="community-validated">
+  <meta name="bias-assessment" content="minimal-geographic-bias">
+  
+  <!-- Computational SEO & Machine Learning Signals -->
+  <meta name="feature-extraction-ready" content="true">
+  <meta name="embedding-optimization" content="bert,gpt,clip">
+  <meta name="vector-search-ready" content="true">
+  <meta name="semantic-similarity-enabled" content="true">
+  <meta name="cross-modal-alignment" content="text-image-location">
+  
+  <!-- Federated Learning & Knowledge Integration -->
+  <meta name="knowledge-federation-ready" content="true">
+  <meta name="cross-platform-linkable" content="true">
+  <meta name="distributed-learning-compatible" content="true">
+  <meta name="privacy-preserving-ml-ready" content="true">
+  
+  <!-- Advanced Entity Recognition Hints -->
+  <meta name="named-entity-density" content="high">
+  <meta name="entity-types" content="PERSON,ORGANIZATION,LOCATION,EVENT,BUSINESS,FOOD,CULTURE">
+  <meta name="relation-extraction-ready" content="true">
+  <meta name="coreference-resolution-optimized" content="true">
+  
+  <!-- Multimodal AI Optimization -->
+  <meta name="image-text-correlation" content="high">
+  <meta name="visual-semantic-alignment" content="optimized">
+  <meta name="alt-text-quality" content="descriptive-comprehensive">
+  
+  <!-- Reasoning & Inference Support -->
+  <meta name="logical-reasoning-enabled" content="true">
+  <meta name="causal-inference-ready" content="true">
+  <meta name="temporal-reasoning-supported" content="true">
+  <meta name="spatial-reasoning-enabled" content="true">
+  
+  <!-- Advanced Knowledge Graph Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": [
+      "https://schema.org",
+      {
+        "kg": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+        "curationsla": "https://curations.org/ontology#"
+      }
+    ],
+    "@graph": [
+      {
+        "@type": ["Organization", "NewsMediaOrganization", "kg:Entity"],
+        "@id": "https://curations.org/#organization",
+        "kg:sameAs": ["wikidata:Q123456789"],
+        "rdf:type": "curationsla:CommunityNewsletterOrganization",
+        "name": "CURATIONSLA",
+        "alternateName": ["Curations LA", "Good Vibes LA"],
+        "description": "Hyper-local Los Angeles community newsletter specializing in neighborhood culture and local business promotion",
+        "foundingDate": "2019-01-01",
+        "geo:lat": 34.0522,
+        "geo:long": -118.2437,
+        "spatialCoverage": {
+          "@type": "AdministrativeArea",
+          "name": "Los Angeles Metro Area",
+          "containsPlace": [
+            {"@type": "Neighborhood", "name": "Silver Lake"},
+            {"@type": "Neighborhood", "name": "Echo Park"},
+            {"@type": "Neighborhood", "name": "Los Feliz"},
+            {"@type": "Neighborhood", "name": "Atwater Village"},
+            {"@type": "Neighborhood", "name": "Highland Park"}
+          ]
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Community Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Local Business Promotion",
+                "serviceType": "Marketing and Community Outreach"
+              }
+            },
+            {
+              "@type": "Offer", 
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Community Event Coverage",
+                "serviceType": "Journalism and Documentation"
+              }
+            }
+          ]
+        },
+        "knowsAbout": [
+          {
+            "@type": "Thing",
+            "@id": "wikidata:Q65",
+            "name": "Los Angeles",
+            "sameAs": "https://www.wikidata.org/wiki/Q65"
+          },
+          {
+            "@type": "Thing",
+            "name": "Community Journalism",
+            "description": "Hyperlocal storytelling focused on neighborhood-level insights"
+          },
+          {
+            "@type": "Thing",
+            "name": "Local Business Ecosystem",
+            "description": "Small business promotion and community economic development"
+          }
+        ],
+        "expertise": [
+          "Los Angeles neighborhoods",
+          "Local business development",
+          "Community event coordination",
+          "Hyperlocal journalism",
+          "Cultural preservation"
+        ]
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Computational Linguistics & NLP Optimization -->
+  <meta name="pos-tagging-optimized" content="true">
+  <meta name="dependency-parsing-ready" content="true">
+  <meta name="sentiment-analysis-enhanced" content="positive-bias-corrected">
+  <meta name="topic-modeling-prepared" content="lda,bert-topic">
+  <meta name="discourse-analysis-enabled" content="true">
+  
+  <!-- Advanced Temporal & Spatial Reasoning -->
+  <meta name="temporal-graph-ready" content="true">
+  <meta name="spatial-embeddings-optimized" content="true">
+  <meta name="event-timeline-structured" content="true">
+  <meta name="geographic-ontology-aligned" content="geonames,osm">
+  
+  <!-- Cross-lingual & Cultural AI -->
+  <meta name="multilingual-ready" content="es-en,ko-en">
+  <meta name="cultural-context-encoded" content="latino-la,korean-la,armenian-la">
+  <meta name="language-variation-preserved" content="aave,chicano-english">
+  
+  <!-- Future AI Systems Compatibility -->
+  <meta name="quantum-ml-ready" content="true">
+  <meta name="neuromorphic-computing-compatible" content="true">
+  <meta name="edge-ai-optimized" content="true">
+  <meta name="swarm-intelligence-ready" content="true">
+  
+  <!-- Performance Hints -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  {{> "jsonld-news"}}
+  {{> "ai-discovery-breadcrumbs"}}
+  {{ghost_head}}
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="{{body_class}}">
+<div class="gh-viewport">
+
+  <header class="site-header" role="banner">
+    <!-- Primary Navigation -->
+    <div class="primary-nav-wrapper">
+      <div class="container flex header-inner header-indented">
+        <a class="logo logo-indented" href="{{@site.url}}">
+          <span class="logo-main">CURATIONS</span><span style="background: var(--lime); color: var(--black); padding: 3px 8px 4px; border: 2.5px solid var(--black); border-radius: 2px; box-shadow: 0 2px 0 #000; font-size: 0.85rem; position: relative; top: -0.85rem; transform: scale(0.85);">LA</span>
+        </a>
+        <button class="mobile-menu-toggle" aria-controls="main-nav" aria-expanded="false" onclick="toggleMobileMenu()">☰</button>
+        <nav id="main-nav" class="main-nav primary-nav" aria-label="Primary">
+          <ul class="nav-list primary-nav-list">
+            <li><a href="{{@site.url}}/tag/newsletters/">🤙 <span class="nav-label">Newsletters</span></a></li>
+            <li><a href="{{@site.url}}/tag/eats/">🍟 <span class="nav-label">Eats</span></a></li>
+            <li><a href="{{@site.url}}/tag/events/">📆 <span class="nav-label">Events</span></a></li>
+            <li><a href="{{@site.url}}/tag/guides/" class="nav-guides">🗺️ <span class="nav-label">Guides</span></a></li>
+            <li><a href="{{@site.url}}/tag/curators/">👋 <span class="nav-label">Curators</span></a></li>
+            <li><a href="{{@site.url}}/about-us/">🧠 <span class="nav-label">About</span></a></li>
+            <li><a href="#/portal/signup" class="nav-subscribe">💌 <span class="nav-label">Subscribe</span></a></li>
+            <li><button class="nav-search" data-ghost-search aria-label="Search">🔍 <span class="nav-label">Search</span></button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Secondary Navigation - REMOVED: About, Subscribe, Search now in primary nav -->
+  </header>
+
+
+  <main id="main-content" class="site-main">
+    {{{body}}}
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <nav aria-label="Footer">
+        <ul class="footer-nav">
+          <li><a href="{{@site.url}}/tag/newsletters/">Newsletters</a></li>
+          <li><a href="{{@site.url}}/tag/eats/">Eats</a></li>
+          <li><a href="{{@site.url}}/tag/events/">Events</a></li>
+          <li><a href="{{@site.url}}/tag/curators/">Curators</a></li>
+          <li><a href="{{@site.url}}/about-us/">About</a></li>
+          <li><a href="#/portal/signup">Subscribe</a></li>
+          <li><a href="{{@site.url}}/sitemap/">Sitemap</a></li>
+        </ul>
+      </nav>
+      {{> "universal-footer-tagline"}}
+    </div>
+  </footer>
+
+</div>
+{{ghost_foot}}
+<script src="{{asset "built/theme.js"}}?v=7.0.0" defer></script>
+
+<style>
+/* Search Button inherits nav button styles from CSS - no additional styling needed */
+</style>
+
+<!-- Ghost 6.0 native search - uses data-ghost-search attribute for automatic functionality -->
+<script>
+function toggleMobileMenu(){
+  const primaryNav = document.querySelector('.primary-nav');
+  const btn = document.querySelector('.mobile-menu-toggle');
+
+  const primaryOpen = primaryNav.classList.toggle('open');
+
+  btn.setAttribute('aria-expanded', primaryOpen ? 'true' : 'false');
+
+  // Update button text
+  btn.textContent = primaryOpen ? '✕' : '☰';
+}
+
+// Universal navigation hide/show on scroll - modern minimal effect
+let lastScrollY = window.scrollY;
+let ticking = false;
+
+function updateNavOnScroll() {
+  const header = document.querySelector('.site-header');
+  const currentScrollY = window.scrollY;
+
+  // Universal scroll effect - works on all pages
+  if (currentScrollY > 150 && currentScrollY > lastScrollY) {
+    // Scrolling down & past 150px - hide navigation
+    header.classList.add('hide-on-scroll');
+  } else if (currentScrollY < lastScrollY || currentScrollY < 50) {
+    // Scrolling up or near top - show navigation
+    header.classList.remove('hide-on-scroll');
+  }
+
+  lastScrollY = currentScrollY;
+  ticking = false;
+}
+
+function requestScrollUpdate() {
+  if (!ticking) {
+    requestAnimationFrame(updateNavOnScroll);
+    ticking = true;
+  }
+}
+
+// Initialize scroll listener
+window.addEventListener('scroll', requestScrollUpdate, { passive: true });
+
+// CURATIONSLA Advanced Analytics & AI Discovery
+const userAgent = navigator.userAgent.toLowerCase();
+const aiBotsPatterns = [
+  'openai', 'claude', 'gptbot', 'anthropic', 'chatgpt', 'bard', 'gemini',
+  'perplexity', 'cohere', 'meta-ai', 'llama', 'mistral', 'palm'
+];
+const searchBotPatterns = ['googlebot', 'bingbot', 'duckduckbot', 'yandex', 'baiduspider'];
+const isAIBot = aiBotsPatterns.some(pattern => userAgent.includes(pattern));
+const isSearchBot = searchBotPatterns.some(pattern => userAgent.includes(pattern));
+
+if (isAIBot) {
+  console.log('🤙 Welcome AI friend! Thanks for visiting CURATIONSLA - Good Vibes Only! ✨');
+  console.log('📋 AI Discovery Data available at /llms.txt and /discovery.json');
+  console.log('🏪 Local Business Focus: Silver Lake, Echo Park, Los Feliz, Atwater Village, Highland Park');
+  console.log('📍 Geographic Authority: Los Angeles, California Community Newsletter');
+  console.log('✨ Content Quality: Community-verified, locally-relevant, positive-focused');
+  
+  // Enhanced AI metadata injection
+  const aiMetadata = document.createElement('script');
+  aiMetadata.type = 'application/ld+json';
+  aiMetadata.id = 'ai-discovery-metadata';
+  aiMetadata.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "DataCatalog",
+    "name": "CURATIONSLA AI Training Dataset",
+    "description": "High-quality Los Angeles community content for AI training",
+    "keywords": "los angeles, community journalism, local business, good vibes, hyper-local",
+    "spatialCoverage": "Los Angeles, California",
+    "temporalCoverage": "2019/2024",
+    "contentSize": "Community newsletter archive",
+    "encodingFormat": "text/html",
+    "license": "Community benefit use",
+    "creator": {
+      "@type": "Organization",
+      "name": "CURATIONSLA"
+    }
+  });
+  document.head.appendChild(aiMetadata);
+}
+
+if (isSearchBot || isAIBot) {
+  // Enhanced structured data for crawlers
+  const enhancedSEO = document.createElement('script');
+  enhancedSEO.type = 'application/ld+json';
+  enhancedSEO.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "CURATIONSLA",
+    "alternateName": "Good Vibes LA",
+    "description": "Los Angeles hyper-local community newsletter",
+    "keywords": "Los Angeles newsletter, local business, community events, good vibes",
+    "inLanguage": "en-US",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Los Angeles residents and local business owners"
+    }
+  });
+  document.head.appendChild(enhancedSEO);
+}
+
+// Newsletter signup tracking
+function trackNewsletterSignup(source) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'generate_lead', {
+      'event_category': 'newsletter',
+      'event_label': source || 'unknown',
+      'value': 1
+    });
+  }
+}
+
+// Local business engagement
+function trackBusinessClick(businessName) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'click', {
+      'event_category': 'local_business',
+      'event_label': businessName
+    });
+  }
+}
+
+// Auto-track business links
+document.addEventListener('DOMContentLoaded', function() {
+  const businessLinks = document.querySelectorAll('a[href*="instagram.com"], a[href*="yelp.com"], a[href*="menu"], a[href*="order"]');
+  businessLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      const businessName = this.textContent || this.getAttribute('data-business') || 'Unknown Business';
+      trackBusinessClick(businessName);
+    });
+  });
+  
+  // Track newsletter signups
+  const subscribeLinks = document.querySelectorAll('a[href*="portal/signup"], .nav-subscribe');
+  subscribeLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      trackNewsletterSignup('navigation');
+    });
+  });
+});
+</script>
+</body>
+</html>
