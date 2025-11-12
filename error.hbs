@@ -1,0 +1,185 @@
+{{!< default}}
+
+<main class="site-main error-main">
+  <article class="error-content framed-article">
+    <header class="error-header">
+      <h1 class="error-title">
+        🤙 Oops! Good vibes lost
+      </h1>
+      <p class="error-description">
+        This page got lost in the LA traffic...
+      </p>
+    </header>
+
+    <div class="error-body">
+      <div class="error-navigation">
+        <h2 class="error-nav-title">Try these instead:</h2>
+        <nav class="error-nav" aria-label="404 Navigation">
+          <ul class="error-nav-list">
+            <li><a href="{{#if @site.url}}{{@site.url}}{{else}}/{{/if}}/tag/newsletters/" class="error-nav-link">🤙 <span>Newsletters</span></a></li>
+            <li><a href="{{#if @site.url}}{{@site.url}}{{else}}/{{/if}}/tag/eats/" class="error-nav-link">🍟 <span>LA Eats</span></a></li>
+            <li><a href="{{#if @site.url}}{{@site.url}}{{else}}/{{/if}}/tag/events/" class="error-nav-link">📆 <span>Events</span></a></li>
+            <li><a href="{{#if @site.url}}{{@site.url}}{{else}}/{{/if}}/tag/curators/" class="error-nav-link">👋 <span>Curators</span></a></li>
+            <li><a href="{{#if @site.url}}{{@site.url}}{{else}}/{{/if}}/about/" class="error-nav-link">🧠 <span>About</span></a></li>
+            <li><a href="{{#if @site.url}}{{@site.url}}{{else}}/{{/if}}/" class="error-nav-link error-nav-link--home">🏠 <span>Homepage</span></a></li>
+          </ul>
+        </nav>
+      </div>
+
+      {{#if @custom.show_newsletter_signup}}
+      <div class="error-subscribe">
+        <div class="error-subscribe-content">
+          <h3 class="error-subscribe-title">Stay in the loop</h3>
+          <p class="error-subscribe-text">Get the latest LA good vibes delivered weekly</p>
+          <a href="#/portal/signup" class="error-subscribe-button">💌 Subscribe to CURATIONSLA</a>
+        </div>
+      </div>
+      {{/if}}
+
+      {{!-- Safe error details for debugging (only shows if available) --}}
+      {{#if error.statusCode}}
+        <div class="error-details" style="margin-top: 2rem; padding: 1rem; background: #f5f5f5; border-radius: 8px; font-family: monospace; font-size: 0.875rem; color: #666;">
+          <details>
+            <summary style="cursor: pointer; font-weight: bold;">Technical Details</summary>
+            <div style="margin-top: 0.5rem;">
+              {{#if error.statusCode}}<p><strong>Status:</strong> {{error.statusCode}}</p>{{/if}}
+              {{#if error.message}}<p><strong>Message:</strong> {{error.message}}</p>{{/if}}
+            </div>
+          </details>
+        </div>
+      {{/if}}
+    </div>
+  </article>
+</main>
+
+<style>
+.error-main {
+  padding: 2rem 1rem;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-content {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.error-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: var(--color-primary, #1a1a1a);
+  line-height: 1.2;
+}
+
+.error-description {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  color: var(--color-secondary, #666);
+}
+
+.error-nav-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary, #1a1a1a);
+}
+
+.error-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+}
+
+.error-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  background: var(--color-accent, #ebf998);
+  color: var(--color-primary, #1a1a1a);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.error-nav-link:hover {
+  background: var(--color-primary, #1a1a1a);
+  color: var(--color-accent, #ebf998);
+  transform: translateY(-2px);
+}
+
+.error-nav-link--home {
+  background: var(--color-primary, #1a1a1a);
+  color: var(--color-accent, #ebf998);
+}
+
+.error-nav-link--home:hover {
+  background: var(--color-accent, #ebf998);
+  color: var(--color-primary, #1a1a1a);
+}
+
+.error-subscribe {
+  background: var(--color-light-gray, #f8f8f8);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.error-subscribe-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary, #1a1a1a);
+}
+
+.error-subscribe-text {
+  margin-bottom: 1.5rem;
+  color: var(--color-secondary, #666);
+}
+
+.error-subscribe-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: var(--color-primary, #1a1a1a);
+  color: var(--color-accent, #ebf998);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.error-subscribe-button:hover {
+  background: var(--color-accent, #ebf998);
+  color: var(--color-primary, #1a1a1a);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .error-content {
+    padding: 2rem 1rem;
+  }
+  
+  .error-title {
+    font-size: 2rem;
+  }
+  
+  .error-nav-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .error-subscribe {
+    padding: 1.5rem;
+  }
+}
+</style>

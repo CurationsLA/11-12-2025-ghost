@@ -1,0 +1,155 @@
+{{!< default}}
+
+<!-- Enhanced Tag Page Schema for AI Discovery -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{url absolute="true"}}/#collection",
+  "name": "{{tag.name}} - CURATIONSLA",
+  "description": "{{#if tag.description}}{{tag.description}}{{else}}Los Angeles {{tag.name}} content from CURATIONSLA community newsletter{{/if}}",
+  "url": "{{url absolute="true"}}",
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "{{tag.name}} Articles",
+    "description": "Community-curated content about {{tag.name}} in Los Angeles",
+    "numberOfItems": "{{pagination.total}}",
+    "itemListElement": [
+      {{#foreach posts}}
+      {
+        "@type": "Article",
+        "position": {{@index}},
+        "name": "{{title}}",
+        "url": "{{url absolute="true"}}",
+        "datePublished": "{{date published_at format="YYYY-MM-DD"}}",
+        "author": {
+          "@type": "Organization",
+          "name": "CURATIONSLA"
+        }
+      }{{#unless @last}},{{/unless}}
+      {{/foreach}}
+    ]
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "{{tag.name}}",
+    "description": "Los Angeles {{tag.name}} community content"
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Los Angeles residents interested in {{tag.name}}",
+    "geographicArea": {
+      "@type": "City", 
+      "name": "Los Angeles"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "{{@site.url}}/#organization",
+    "name": "CURATIONSLA"
+  },
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Los Angeles, California",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.0522,
+      "longitude": -118.2437
+    }
+  }
+}
+</script>
+
+<!-- Tag-Specific AI Discovery Meta -->
+<meta name="content-category" content="{{tag.name}}">
+<meta name="local-topic-authority" content="los-angeles-{{tag.slug}}">
+<meta name="community-content-cluster" content="{{tag.name}}-los-angeles">
+<meta name="ai-topic-classification" content="hyper-local-{{tag.slug}}-content">
+
+<main class="site-main tag-main">
+  <section class="home-section home-latest">
+    <header class="section-header tag-header">
+      <h2 class="section-title">
+        <span class="section-emoji">
+          {{#match tag.slug "newsletters"}}🤙{{/match}}
+          {{#match tag.slug "eats"}}🍟{{/match}}
+          {{#match tag.slug "events"}}📆{{/match}}
+          {{#match tag.slug "curators"}}👋{{/match}}
+          {{#match tag.slug "news"}}📰{{/match}}
+          {{#match tag.slug "culture"}}🎭{{/match}}
+          {{#match tag.slug "business"}}💼{{/match}}
+          {{#match tag.slug "community"}}🏘️{{/match}}
+          {{#match tag.slug "entertainment"}}🎪{{/match}}
+          {{#match tag.slug "health"}}💚{{/match}}
+          {{#match tag.slug "tech"}}💻{{/match}}
+          {{#match tag.slug "art"}}🎨{{/match}}
+          {{#unless tag.slug}}📁{{/unless}}
+        </span>
+        <span class="location-tag">{{tag.name}}</span>
+      </h2>
+      <div class="section-rule"></div>
+    </header>
+
+    {{!-- FULLY CLICKABLE Article List WITHOUT Featured Images --}}
+    <div class="latest-list">
+      {{#foreach posts}}
+        <article class="latest-item {{post_class}}">
+          <a href="{{url}}" class="latest-item-link">
+            <div class="latest-item-content">
+              <!-- Header with Tag and Date -->
+              <div class="latest-item-header">
+                {{#if primary_tag}}
+                  <span class="latest-item-tag">
+                    {{#match primary_tag.slug "newsletters"}}🤙 LATEST VIBES{{/match}}
+                    {{#match primary_tag.slug "eats"}}🍟 EATS{{/match}}
+                    {{#match primary_tag.slug "events"}}📆 EVENTS{{/match}}
+                    {{#match primary_tag.slug "curators"}}👋 CURATORS{{/match}}
+                    {{#match primary_tag.slug "news"}}📰 NEWS{{/match}}
+                    {{#match primary_tag.slug "culture"}}🎭 CULTURE{{/match}}
+                    {{#match primary_tag.slug "business"}}💼 BUSINESS{{/match}}
+                    {{#match primary_tag.slug "community"}}🏘️ COMMUNITY{{/match}}
+                    {{#match primary_tag.slug "entertainment"}}🎪 ENTERTAINMENT{{/match}}
+                    {{#match primary_tag.slug "health"}}💚 HEALTH{{/match}}
+                    {{#match primary_tag.slug "tech"}}💻 TECH{{/match}}
+                    {{#match primary_tag.slug "art"}}🎨 ART{{/match}}
+                    {{#unless primary_tag.slug}}📝 {{primary_tag.name}}{{/unless}}
+                  </span>
+                {{else}}
+                  <span class="latest-item-tag">📝 GENERAL</span>
+                {{/if}}
+                <time class="latest-item-date">{{date published_at format="MMM D, YYYY"}}</time>
+              </div>
+              
+              <!-- GREEN BOX AROUND TITLE (Uppercase) -->
+              <h4 class="latest-item-title">
+                <span>{{title}}</span>
+              </h4>
+              
+              <!-- EXCERPT -->
+              {{#if excerpt}}
+                <p class="latest-item-excerpt">{{excerpt}}</p>
+              {{/if}}
+              
+              <!-- MORE → Link in bottom right -->
+              <div class="latest-item-footer">
+                <span class="more-link">MORE →</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      {{/foreach}}
+    </div>
+
+    {{!-- BRUTALIST Purple/Green Pagination --}}
+    <div class="pagination">
+      {{#if pagination.prev}}
+        <a href="{{pagination.prev}}" class="pagination-prev">← BACK</a>
+      {{/if}}
+      {{#if pagination.next}}
+        <a href="{{pagination.next}}" class="pagination-next">NEXT →</a>
+      {{/if}}
+    </div>
+
+  </section>
+
+</main>

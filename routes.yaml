@@ -1,0 +1,154 @@
+# 🎯 ADVANCED GHOST ROUTES - CURATIONSLA 2025
+# A project curated by Humans x AI at Curations.cc
+# Optimized for LA Local SEO, AI Discovery & Newsletter Excellence
+
+routes:
+  # AI Discovery & Training Data Routes (Super Secret Menu)
+  /discovery.json:
+    template: page-discovery
+    content_type: application/json
+  /llms.txt:
+    template: page-llms
+    content_type: text/plain
+
+  # Business development pages (value-add features)
+  /partnerships/:
+    template: page-partnerships
+    data: page.partnerships
+  /submit/:
+    template: page-submit
+    data: page.submit
+
+  # About/Info pages with enhanced SEO
+  /about/:
+    template: page-about
+    data: page.about
+  /subscribe/:
+    template: page-subscribe
+    data: page.subscribe
+  /contact/:
+    template: page-contact
+    data: page.contact
+  /privacy/:
+    template: page-privacy
+    data: page.privacy
+
+collections:
+  # Main homepage - exclude internal tags for clean public view
+  /:
+    permalink: /{slug}/
+    template: index
+    filter: visibility:public+tag:-hash-newsletter+tag:-hash-draft+tag:-hash-internal
+
+  # Newsletter archive collection with enhanced SEO
+  /newsletters/:
+    permalink: /newsletters/{slug}/
+    template: newsletters
+    filter: tag:newsletters+visibility:public
+    data: page.newsletters
+
+  # Events collection for LA happenings  
+  /events/:
+    permalink: /events/{slug}/
+    template: events
+    filter: tag:events+visibility:public
+    data: page.events
+
+  # Eats/Restaurant collection
+  /eats/:
+    permalink: /eats/{slug}/
+    template: eats
+    filter: tag:eats+visibility:public
+    data: page.eats
+
+  # Business news collection
+  /business/:
+    permalink: /business/{slug}/
+    template: business
+    filter: tag:business+visibility:public
+    data: page.business
+
+  # Curators/Team collection
+  /curators/:
+    permalink: /curators/{slug}/
+    template: curators
+    filter: tag:curators+visibility:public
+    data: page.curators
+
+  # Neighborhood-specific collections for LA local SEO
+  /neighborhoods/silver-lake/:
+    permalink: /neighborhoods/silver-lake/{slug}/
+    template: neighborhoods
+    filter: tag:silver-lake+visibility:public
+    data: page.silver-lake
+
+  /neighborhoods/echo-park/:
+    permalink: /neighborhoods/echo-park/{slug}/
+    template: neighborhoods
+    filter: tag:echo-park+visibility:public
+    data: page.echo-park
+
+  /neighborhoods/los-feliz/:
+    permalink: /neighborhoods/los-feliz/{slug}/
+    template: neighborhoods
+    filter: tag:los-feliz+visibility:public
+    data: page.los-feliz
+
+  /neighborhoods/atwater-village/:
+    permalink: /neighborhoods/atwater-village/{slug}/
+    template: neighborhoods
+    filter: tag:atwater-village+visibility:public
+    data: page.atwater-village
+
+  /neighborhoods/highland-park/:
+    permalink: /neighborhoods/highland-park/{slug}/
+    template: neighborhoods
+    filter: tag:highland-park+visibility:public
+    data: page.highland-park
+
+  /neighborhoods/mount-washington/:
+    permalink: /neighborhoods/mount-washington/{slug}/
+    template: neighborhoods
+    filter: tag:mount-washington+visibility:public
+    data: page.mount-washington
+
+  /neighborhoods/eagle-rock/:
+    permalink: /neighborhoods/eagle-rock/{slug}/
+    template: neighborhoods  
+    filter: tag:eagle-rock+visibility:public
+    data: page.eagle-rock
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
+
+redirects:
+  # Friendly URLs redirecting to structured collections
+  /newsletters: /newsletters/
+  /eats: /eats/
+  /events: /events/
+  /curators: /curators/
+  /business: /business/
+
+  # LA neighborhood redirects to structured collections
+  /silver-lake: /neighborhoods/silver-lake/
+  /echo-park: /neighborhoods/echo-park/
+  /los-feliz: /neighborhoods/los-feliz/
+  /atwater-village: /neighborhoods/atwater-village/
+  /highland-park: /neighborhoods/highland-park/
+  /mount-washington: /neighborhoods/mount-washington/
+  /eagle-rock: /neighborhoods/eagle-rock/
+
+  # Legacy tag redirects for SEO preservation  
+  /tag/newsletters: /newsletters/
+  /tag/eats: /eats/
+  /tag/events: /events/
+  /tag/curators: /curators/
+  /tag/business: /business/
+  /tag/silver-lake: /neighborhoods/silver-lake/
+  /tag/echo-park: /neighborhoods/echo-park/
+  /tag/los-feliz: /neighborhoods/los-feliz/
+  /tag/atwater-village: /neighborhoods/atwater-village/
+  /tag/highland-park: /neighborhoods/highland-park/
+  /tag/mount-washington: /neighborhoods/mount-washington/
+  /tag/eagle-rock: /neighborhoods/eagle-rock/

@@ -1,0 +1,63 @@
+# 🎯 GHOST REDIRECTS - CURATIONSLA 2025
+# Simple format for Ghost CMS compatibility
+# Source: Destination (301 redirects by default)
+
+# CRITICAL: /p/ Newsletter Post Redirect Fix 
+# Regex format for Ghost redirects.yaml
+/p/courtney-ferris-beast-games-player-424/: /courtney-ferris-beast-games-player-424/
+/p/(.*): /$1
+
+# Collection-based redirects for clean URLs
+/newsletters: /newsletters/
+/eats: /eats/
+/events: /events/
+/curators: /curators/
+/business: /business/
+
+# LA Neighborhood redirects
+/silver-lake: /neighborhoods/silver-lake/
+/echo-park: /neighborhoods/echo-park/
+/los-feliz: /neighborhoods/los-feliz/
+/atwater-village: /neighborhoods/atwater-village/
+/highland-park: /neighborhoods/highland-park/
+/mount-washington: /neighborhoods/mount-washington/
+/eagle-rock: /neighborhoods/eagle-rock/
+
+# Legacy tag redirects
+/tag/newsletters/: /newsletters/
+/tag/eats/: /eats/
+/tag/events/: /events/
+/tag/curators/: /curators/
+/tag/business/: /business/
+/tag/silver-lake/: /neighborhoods/silver-lake/
+/tag/echo-park/: /neighborhoods/echo-park/
+/tag/los-feliz/: /neighborhoods/los-feliz/
+/tag/atwater-village/: /neighborhoods/atwater-village/
+/tag/highland-park/: /neighborhoods/highland-park/
+/tag/mount-washington/: /neighborhoods/mount-washington/
+/tag/eagle-rock/: /neighborhoods/eagle-rock/
+
+# Common variations
+/newsletter: /newsletters/
+/eat: /eats/
+/event: /events/
+/curator: /curators/
+
+# LA variations for local SEO
+/la-events: /events/
+/los-angeles-events: /events/
+/la-restaurants: /eats/
+/los-angeles-restaurants: /eats/
+/la-dining: /eats/
+/la-food: /eats/
+/la-news: /business/
+/los-angeles-news: /business/
+
+# Neighborhood variations  
+/silverlake: /neighborhoods/silver-lake/
+/echopark: /neighborhoods/echo-park/
+/losfeliz: /neighborhoods/los-feliz/
+/atwatervillage: /neighborhoods/atwater-village/
+/highlandpark: /neighborhoods/highland-park/
+/mountwashington: /neighborhoods/mount-washington/
+/eaglerock: /neighborhoods/eagle-rock/

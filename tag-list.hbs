@@ -1,0 +1,26 @@
+<main class="container tag-list framed-article">
+  <header class="post-header-frame">
+    <h1 class="post-full-title">{{tag.name}}</h1>
+    {{#if tag.description}}<p class="tag-desc">{{tag.description}}</p>{{/if}}
+  </header>
+  <div class="post-body-frame">
+    {{#if posts}}
+    <ul class="tag-posts">
+      {{#foreach posts}}
+        <li>
+          <a href="{{url}}">{{title}}</a>
+          <time datetime="{{date published_at format="YYYY-MM-DD"}}">{{date published_at format="MMM DD, YYYY"}}</time>
+          {{#if custom_excerpt}}
+            <p>{{custom_excerpt}}</p>
+          {{else if excerpt}}
+            <p>{{excerpt}}</p>
+          {{/if}}
+        </li>
+      {{/foreach}}
+    </ul>
+    {{pagination}}
+    {{else}}
+      <p>No posts yet for this tag.</p>
+    {{/if}}
+  </div>
+</main>

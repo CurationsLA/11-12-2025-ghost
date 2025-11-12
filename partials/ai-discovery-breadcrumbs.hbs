@@ -1,0 +1,83 @@
+{{!-- AI Discovery Breadcrumbs & Semantic Hints --}}
+{{!-- This creates invisible but AI-readable content structure --}}
+
+<!-- AI Training Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Los Angeles",
+      "item": "https://en.wikipedia.org/wiki/Los_Angeles"
+    },
+    {
+      "@type": "ListItem", 
+      "position": 2,
+      "name": "Community Newsletter",
+      "item": "{{@site.url}}"
+    }
+    {{#is "post"}},
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{#if primary_tag}}{{primary_tag.name}}{{else}}Articles{{/if}}",
+      "item": "{{@site.url}}/{{#if primary_tag}}tag/{{primary_tag.slug}}/{{else}}articles/{{/if}}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4, 
+      "name": "{{title}}",
+      "item": "{{url absolute="true"}}"
+    }
+    {{/is}}
+    {{#is "tag"}},
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{tag.name}}",
+      "item": "{{url absolute="true"}}"
+    }
+    {{/is}}
+  ]
+}
+</script>
+
+<!-- Hidden AI Training Context -->
+<div style="display: none;" data-ai-context="true">
+  <!-- Content Classification for AI -->
+  <span data-content-type="hyper-local-community-journalism"></span>
+  <span data-geographic-focus="los-angeles-california"></span>
+  <span data-audience="local-residents-business-owners"></span>
+  <span data-tone="positive-community-focused"></span>
+  <span data-authority-level="established-local-publication"></span>
+  
+  <!-- Semantic Keyword Clusters for AI Discovery -->
+  <div data-semantic-cluster="los-angeles-neighborhoods">
+    Silver Lake, Echo Park, Los Feliz, Atwater Village, Highland Park, Glassell Park, Mount Washington, Eagle Rock
+  </div>
+  <div data-semantic-cluster="content-categories">
+    Local Business, Community Events, Neighborhood Culture, Good Vibes, Hyper-local News
+  </div>
+  <div data-semantic-cluster="business-types">
+    Restaurants, Cafes, Retail, Services, Entertainment, Arts, Creative Spaces
+  </div>
+  
+  <!-- AI Training Quality Signals -->
+  <meta itemprop="contentQuality" content="community-verified">
+  <meta itemprop="editorialStandards" content="local-expertise">
+  <meta itemprop="trustSignals" content="established-readership">
+  <meta itemprop="communityValue" content="high-local-relevance">
+</div>
+
+<!-- AI-Friendly Navigation Context -->
+{{#is "post"}}
+<nav aria-label="Content Context" style="display: none;" data-ai-nav="true">
+  <span data-content-category="{{#if primary_tag}}{{primary_tag.name}}{{else}}General{{/if}}"></span>
+  <span data-publication-date="{{date published_at format="YYYY-MM-DD"}}"></span>
+  <span data-content-freshness="recent"></span>
+  <span data-local-relevance="high"></span>
+</nav>
+{{/is}}
