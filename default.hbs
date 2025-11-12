@@ -462,6 +462,12 @@
   <!-- Read Progress Bar -->
   <div class="read-progress-bar" id="readProgressBar"></div>
 
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+    <span class="scroll-to-top-arrow">↑</span>
+    <span class="scroll-to-top-percent" id="scrollPercent">0%</span>
+  </button>
+
   <header class="site-header" role="banner">
     <!-- Primary Navigation -->
     <div class="primary-nav-wrapper">
@@ -574,9 +580,12 @@ function requestScrollUpdate() {
 // Initialize scroll listener
 window.addEventListener('scroll', requestScrollUpdate, { passive: true });
 
-// Read Progress Bar
+// Read Progress Bar & Scroll to Top Button
 function updateReadProgress() {
   const progressBar = document.getElementById('readProgressBar');
+  const scrollToTopBtn = document.getElementById('scrollToTop');
+  const scrollPercent = document.getElementById('scrollPercent');
+
   if (!progressBar) return;
 
   const windowHeight = window.innerHeight;
@@ -584,13 +593,43 @@ function updateReadProgress() {
   const scrolled = window.scrollY;
   const progress = (scrolled / documentHeight) * 100;
 
+  // Update progress bar
   progressBar.style.width = progress + '%';
+
+  // Update scroll to top button
+  if (scrollToTopBtn && scrollPercent) {
+    const roundedProgress = Math.round(progress);
+    scrollPercent.textContent = roundedProgress + '%';
+
+    // Show button after 50% scroll
+    if (progress > 50) {
+      scrollToTopBtn.classList.add('visible');
+    } else {
+      scrollToTopBtn.classList.remove('visible');
+    }
+  }
+}
+
+// Scroll to top on button click
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 }
 
 // Update progress on scroll
 window.addEventListener('scroll', updateReadProgress, { passive: true });
 // Update on load
 window.addEventListener('load', updateReadProgress);
+
+// Attach scroll to top button click handler
+document.addEventListener('DOMContentLoaded', function() {
+  const scrollToTopBtn = document.getElementById('scrollToTop');
+  if (scrollToTopBtn) {
+    scrollToTopBtn.addEventListener('click', scrollToTop);
+  }
+});
 
 // Share Article Function
 function shareArticle(title, url) {
@@ -649,6 +688,38 @@ function showToast(message) {
     toast.classList.remove('show');
     setTimeout(() => toast.remove(), 300);
   }, 3000);
+}
+
+// Article Load Animations - Staggered fade in
+function initArticleAnimations() {
+  const articles = document.querySelectorAll('.latest-item');
+
+  if (!articles.length) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        // Stagger the animation with delay based on index
+        const delay = Array.from(articles).indexOf(entry.target) * 100;
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, delay);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  });
+
+  articles.forEach(article => observer.observe(article));
+}
+
+// Initialize animations when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initArticleAnimations);
+} else {
+  initArticleAnimations();
 }
 
 // CURATIONSLA Advanced Analytics & AI Discovery
