@@ -99,6 +99,33 @@ h3 .location-tag {
   border-bottom: 2px solid #000;
 }
 
+/* Secondary Navigation Sub-Bar */
+.secondary-nav-wrapper {
+  background: #fafafa;
+  border-bottom: 2px solid #000;
+  padding: 0.5rem 0;
+}
+
+.secondary-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.secondary-nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Hide mobile-only items on desktop */
+.mobile-only {
+  display: none;
+}
+
 .header-inner {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -682,7 +709,15 @@ mark, ::selection {
 @media (max-width: 900px) {
   .mobile-menu-toggle { display: block; }
 
-  /* Secondary nav no longer exists - all items in primary nav */
+  /* Hide secondary nav on mobile - items will be in hamburger menu */
+  .secondary-nav-wrapper {
+    display: none;
+  }
+
+  /* Show mobile-only items in hamburger menu */
+  .mobile-only {
+    display: list-item;
+  }
 
   /* Primary Nav Mobile */
   .primary-nav {
