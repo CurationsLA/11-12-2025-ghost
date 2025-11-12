@@ -12,11 +12,11 @@
 
         {{#if primary_tag}}
           <span class="latest-item-tag">
-            {{#match primary_tag.slug "newsletters"}}<span class="la-icon la-icon-palm"></span> 🤙 {{/match}}
-            {{#match primary_tag.slug "eats"}}<span class="la-icon la-icon-taco"></span> 🍟 {{/match}}
-            {{#match primary_tag.slug "events"}}<span class="la-icon la-icon-skyline"></span> 📆 {{/match}}
-            {{#match primary_tag.slug "curators"}}<span class="la-icon la-icon-shades"></span> 👋 {{/match}}
-            {{#match primary_tag.slug "guides"}}<span class="la-icon la-icon-skyline"></span> 🗺️ {{/match}}
+            {{#match primary_tag.slug "newsletters"}}🤙 {{/match}}
+            {{#match primary_tag.slug "eats"}}🍟 {{/match}}
+            {{#match primary_tag.slug "events"}}📆 {{/match}}
+            {{#match primary_tag.slug "curators"}}👋 {{/match}}
+            {{#match primary_tag.slug "guides"}}🗺️ {{/match}}
             {{primary_tag.name}}
           </span>
         {{/if}}

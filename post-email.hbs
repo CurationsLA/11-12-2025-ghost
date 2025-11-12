@@ -1,6 +1,6 @@
-{{!-- 
-  CurationsLA Newsletter Template - Enhanced for Proper Styling
-  Focus: Purple H3 vertical bars + Lime green highlights
+{{!--
+  CurationsLA Newsletter Template - LEGENDARY BRUTALIST EDITION
+  Inline styles for email clients × All colors × Maximum impact
 --}}
 <!DOCTYPE html>
 <html>
@@ -8,77 +8,184 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{title}}</title>
-</head>
-<body style="margin: 0; padding: 0; background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
-    
-    {{!-- Newsletter Container --}}
-    <div style="max-width: 680px; margin: 0 auto; background-color: #ffffff;">
-        
-        {{!-- Newsletter Header - CurationsLA Branded --}}
-        <div style="text-align: center; margin-bottom: 32px; padding: 24px 16px 20px 16px; background-color: #8B5CF6; border-bottom: 2px solid #8B5CF6;">
-            <h1 style="text-transform: uppercase; margin: 0 0 12px 0; font-weight: 900; font-size: 28px; color: #ffffff; line-height: 1.2;">{{title}}</h1>
-            <p style="font-style: italic; color: #EBF99A; margin: 0; font-size: 14px; font-weight: 600;">🤙 Good Vibes × Hyper-Local LA Culture</p>
-        </div>
-        
-        {{!-- Enhanced Content Processing Wrapper --}}
-        <div style="padding: 0 20px; color: #111111; line-height: 1.6; font-size: 16px;">
-            
-            {{!-- Apply enhanced inline styling to newsletter content --}}
-            <div id="newsletter-content" style="color: #111111;">
-                {{{html}}}
-            </div>
-            
-            {{!-- Force styling via JavaScript-like approach using CSS --}}
-            <script type="text/plain" style="display: none;">
-                /* This forces Ghost to process enhanced styling */
-                h2 { text-align: center !important; font-weight: 800 !important; margin: 24px 0 16px 0 !important; }
-                h3 { border-left: 4px solid #8B5CF6 !important; padding-left: 16px !important; background-color: #f9f9f9 !important; padding-top: 12px !important; padding-bottom: 12px !important; margin: 20px 0 12px 0 !important; }
-                strong, b { background-color: #EBF99A !important; color: #111111 !important; padding: 3px 6px !important; font-weight: 700 !important; }
-                img { display: block !important; margin: 20px auto !important; max-width: 100% !important; }
-            </script>
-            
-        </div>
-        
-        {{!-- Newsletter Footer --}}
-        <div style="margin-top: 48px; padding: 24px 20px; border-top: 3px solid #EBF99A; text-align: center; background-color: #fafafa;">
-            <p style="margin: 0 0 16px 0; color: #111111; font-size: 14px; line-height: 1.5;">
-                🤙 Good Vibes curated with 💜 in LA by 👋 and 🤖 at 
-                <span style="background-color: #EBF99A; color: #111111; padding: 4px 8px; font-weight: 700; border-radius: 3px; border: 1px solid #8B5CF6;">CURATIONS</span>
-            </p>
-            <p style="margin: 0; color: #666666; font-size: 13px; line-height: 1.4;">
-                <a href="{{@site.url}}" style="color: #8B5CF6; text-decoration: underline; text-decoration-color: #8B5CF6; font-weight: 600;">Visit CurationsLA</a> 
-                <span style="margin: 0 8px; color: #8B5CF6;">•</span>
-                <a href="{{{unsubscribe_url}}}" style="color: #8B5CF6; text-decoration: underline; text-decoration-color: #8B5CF6;">Unsubscribe</a>
-            </p>
-        </div>
-        
-    </div>
+    <style>
+        /* Base Email Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFF8E7;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
 
-    {{!-- Critical: Newsletter-specific content enhancement --}}
-    {{!-- This approach processes the HTML content after Ghost renders it --}}
-    <div style="display: none;">
-        {{!-- Template examples for Ghost to reference --}}
-        
-        {{!-- H2 Template - Centered --}}
-        <h2 style="text-align: center !important; font-weight: 800 !important; font-size: 24px !important; margin: 24px 0 16px 0 !important; color: #111111 !important; font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;">Centered Header Example</h2>
-        
-        {{!-- H3 Template - Purple Vertical Bar --}}
-        <h3 style="border-left: 4px solid #8B5CF6 !important; padding-left: 16px !important; padding-top: 12px !important; padding-bottom: 12px !important; background-color: #f9f9f9 !important; margin: 20px 0 12px 0 !important; color: #111111 !important; font-weight: 600 !important; font-size: 18px !important; font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;">Purple Bar Section</h3>
-        
-        {{!-- Strong/Bold Template - Lime Highlight --}}
-        <strong style="background-color: #EBF99A !important; color: #111111 !important; padding: 3px 6px !important; font-weight: 700 !important; border-radius: 2px !important;">Lime Highlighted Text</strong>
-        
-        {{!-- Image Template - Centered --}}
-        <img style="display: block !important; margin: 20px auto !important; max-width: 100% !important; height: auto !important;" src="placeholder.jpg" alt="Centered Image">
-        
-        {{!-- Media Card Template --}}
-        <div style="border: 2px solid #8B5CF6 !important; border-radius: 8px !important; padding: 16px !important; margin: 20px 0 !important; background-color: #ffffff !important; text-align: center !important;">
-            <h4 style="color: #8B5CF6 !important; margin: 0 0 8px 0 !important; font-weight: 700 !important;">Media Card Title</h4>
-            <p style="color: #111111 !important; margin: 0 0 12px 0 !important; line-height: 1.5 !important;">Enhanced media card with proper CurationsLA styling</p>
-            <a href="#" style="display: inline-block !important; background-color: #EBF99A !important; color: #111111 !important; padding: 8px 16px !important; text-decoration: none !important; border-radius: 4px !important; font-weight: 700 !important; border: 1px solid #8B5CF6 !important;">Read More</a>
-        </div>
-        
-    </div>
+        /* Email-safe resets */
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* Content styling */
+        .content p {
+            margin: 0 0 16px 0;
+            line-height: 1.6;
+        }
+
+        .content blockquote {
+            margin: 24px 0;
+            padding: 20px;
+            border: 4px solid #000000;
+            background-color: #FF1493;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .content h2 {
+            font-size: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin: 32px 0 16px 0;
+            padding-bottom: 8px;
+            border-bottom: 4px solid #000000;
+        }
+
+        .content h3 {
+            font-size: 20px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin: 24px 0 12px 0;
+            padding-left: 16px;
+            border-left: 6px solid #8B5CF6;
+        }
+
+        .content strong {
+            font-weight: 900;
+            background-color: rgba(255, 230, 109, 0.5);
+            padding: 2px 4px;
+        }
+
+        .content ul {
+            margin: 16px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .content ul li {
+            margin-bottom: 8px;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .content ul li:before {
+            content: '▪';
+            position: absolute;
+            left: 0;
+            font-size: 20px;
+            color: #8B5CF6;
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #FFF8E7;">
+
+    <!-- Main Container -->
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #FFF8E7;">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+
+                <!-- Email Content Table -->
+                <table width="600" border="0" cellpadding="0" cellspacing="0" style="max-width: 600px; background-color: #FFFFFF; border: 4px solid #000000;">
+
+                    <!-- Header -->
+                    <tr>
+                        <td style="background-color: #8B5CF6; padding: 24px; text-align: center; border-bottom: 4px solid #000000;">
+                            <h1 style="margin: 0 0 12px 0; font-weight: 900; font-size: 28px; color: #FFFFFF; text-transform: uppercase; line-height: 1.2;">{{title}}</h1>
+                            <p style="margin: 0; color: #EBF99A; font-size: 14px; font-weight: 700;">🤙 GOOD VIBES × HYPER-LOCAL LA CULTURE</p>
+                        </td>
+                    </tr>
+
+                    <!-- Content -->
+                    <tr>
+                        <td class="content" style="padding: 32px 24px; color: #111111; line-height: 1.6; font-size: 16px;">
+
+                            {{{html}}}
+
+                        </td>
+                    </tr>
+
+                    <!-- Rainbow Divider -->
+                    <tr>
+                        <td style="padding: 0;">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="20%" style="background-color: #FF1493; height: 20px; border-top: 4px solid #000000; border-bottom: 4px solid #000000;"></td>
+                                    <td width="20%" style="background-color: #00D4FF; height: 20px; border-top: 4px solid #000000; border-bottom: 4px solid #000000;"></td>
+                                    <td width="20%" style="background-color: #FFE66D; height: 20px; border-top: 4px solid #000000; border-bottom: 4px solid #000000;"></td>
+                                    <td width="20%" style="background-color: #8B5CF6; height: 20px; border-top: 4px solid #000000; border-bottom: 4px solid #000000;"></td>
+                                    <td width="20%" style="background-color: #EBF99A; height: 20px; border-top: 4px solid #000000; border-bottom: 4px solid #000000;"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style="padding: 24px; background-color: #FFF8E7; text-align: center; border-top: 4px solid #000000;">
+                            <p style="margin: 0 0 16px 0; color: #111111; font-size: 14px; line-height: 1.5;">
+                                🤙 Good Vibes curated with 💜 in LA by 👋 and 🤖 at
+                                <span style="background-color: #EBF99A; color: #111111; padding: 4px 8px; font-weight: 700; border: 2px solid #000000;">CURATIONS</span>
+                            </p>
+                            <p style="margin: 0; color: #666666; font-size: 13px; line-height: 1.4;">
+                                <a href="{{@site.url}}" style="color: #8B5CF6; text-decoration: underline; font-weight: 600;">Visit CurationsLA</a>
+                                <span style="margin: 0 8px; color: #8B5CF6;">•</span>
+                                <a href="{{{unsubscribe_url}}}" style="color: #8B5CF6; text-decoration: underline;">Unsubscribe</a>
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+    <!-- Email-Safe HTML Comment Guide -->
+    <!--
+
+    📝 HOW TO USE BRUTALIST ELEMENTS IN YOUR NEWSLETTERS:
+
+    1️⃣ SECTION DIVIDERS:
+    Use <hr> tags - they'll render as rainbow colored bars!
+
+    2️⃣ QUOTES:
+    <blockquote>Your inspiring quote here</blockquote>
+    Renders with hot pink background + black border
+
+    3️⃣ CALENDAR EVENTS:
+    Format dates in bold: <strong>MON, DEC 16</strong> - Event details here
+
+    4️⃣ IMAGE CAPTIONS:
+    <figure>
+      <img src="your-image.jpg" alt="Food photo">
+      <figcaption>Best tacos in LA! 🌮</figcaption>
+    </figure>
+
+    5️⃣ HEADINGS:
+    H2 = Centered section headers with underline
+    H3 = Purple left border headers
+
+    6️⃣ HIGHLIGHTS:
+    Use <strong>bold text</strong> for subtle yellow highlights
+
+    -->
 
 </body>
 </html>

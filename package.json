@@ -1,7 +1,7 @@
 {
   "name": "super-secret-stuff",
-  "description": "CURATIONSLA Legendary Theme - Clean × Emoji-Only × 99% Smaller × Pure Brutalism",
-  "version": "15.0.0-CLEAN",
+  "description": "CURATIONSLA Legendary Theme - Brutalist Content System × All Colors × Newsletter Power",
+  "version": "16.0.0-BRUTALIST-CONTENT",
   "engines": {
     "ghost": ">=6.0.0"
   },
