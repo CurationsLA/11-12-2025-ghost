@@ -22,7 +22,7 @@
   /* Text & Background */
   --text: #000000;              /* Pure black for maximum contrast */
   --text-soft: #444;
-  --bg: #ffffff;
+  --bg: #FFF8E7;                /* Budapest Park warm cream - LEGENDARY */
 
   /* Typography */
   --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -465,10 +465,12 @@ h3 .location-tag {
   display: inline-block;
 }
 
-.latest-item-date { 
-  font-size: 0.7rem; 
-  color: var(--text-soft); 
-  text-transform: uppercase; 
+.latest-item-date {
+  font-size: 0.75rem;                 /* Slightly larger */
+  font-weight: 700;                   /* Bolder */
+  color: var(--text);                 /* Pure black for prominence */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 /* GREEN BOX AROUND TITLE (Uppercase) */
@@ -540,12 +542,29 @@ h3 .location-tag {
   box-shadow: 0 4px 0 #000;
 }
 
-.latest-item-excerpt { 
-  font-size: 0.85rem;
-  color: var(--text-soft);
-  line-height: 1.5;
+.latest-item-excerpt {
+  font-size: 0.9rem;                  /* Slightly larger */
+  font-weight: 600;                   /* Heavier weight for readability */
+  color: var(--text);                 /* Pure black instead of soft */
+  line-height: 1.6;                   /* Better line spacing */
   margin-bottom: 1rem;
   padding: 0 0.5rem;
+}
+
+/* Read Time Badge */
+.read-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-soft);
+  padding: 4px 8px;
+  border: 2px solid #000;
+  background: var(--sunshine-yellow);
+  box-shadow: 0 2px 0 #000;
 }
 
 /* REMOVED: More link is no longer needed since entire box is clickable */

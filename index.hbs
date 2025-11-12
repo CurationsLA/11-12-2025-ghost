@@ -122,26 +122,29 @@
             <div class="latest-item-content">
               <!-- Header with Tag and Date -->
               <div class="latest-item-header">
-                {{#if primary_tag}}
-                  <span class="latest-item-tag">
-                    {{#match primary_tag.slug "newsletters"}}<span class="la-icon la-icon-palm"></span> 🤙 LATEST VIBES{{/match}}
-                    {{#match primary_tag.slug "eats"}}<span class="la-icon la-icon-taco"></span> 🍟 EATS{{/match}}
-                    {{#match primary_tag.slug "events"}}<span class="la-icon la-icon-skyline"></span> 📆 EVENTS{{/match}}
-                    {{#match primary_tag.slug "guides"}}<span class="la-icon la-icon-skyline"></span> 🗺️ GUIDES{{/match}}
-                    {{#match primary_tag.slug "curators"}}<span class="la-icon la-icon-shades"></span> 👋 CURATORS{{/match}}
-                    {{#match primary_tag.slug "news"}}<span class="la-icon la-icon-skyline"></span> 📰 NEWS{{/match}}
-                    {{#match primary_tag.slug "culture"}}<span class="la-icon la-icon-palm"></span> 🎭 CULTURE{{/match}}
-                    {{#match primary_tag.slug "business"}}<span class="la-icon la-icon-skyline"></span> 💼 BUSINESS{{/match}}
-                    {{#match primary_tag.slug "community"}}<span class="la-icon la-icon-palm"></span> 🏘️ COMMUNITY{{/match}}
-                    {{#match primary_tag.slug "entertainment"}}<span class="la-icon la-icon-shades"></span> 🎪 ENTERTAINMENT{{/match}}
-                    {{#match primary_tag.slug "health"}}<span class="la-icon la-icon-palm"></span> 💚 HEALTH{{/match}}
-                    {{#match primary_tag.slug "tech"}}<span class="la-icon la-icon-shades"></span> 💻 TECH{{/match}}
-                    {{#match primary_tag.slug "art"}}<span class="la-icon la-icon-palm"></span> 🎨 ART{{/match}}
-                    {{#unless primary_tag.slug}}<span class="la-icon la-icon-palm"></span> 📝 {{primary_tag.name}}{{/unless}}
-                  </span>
-                {{else}}
-                  <span class="latest-item-tag"><span class="la-icon la-icon-palm"></span> 📝 GENERAL</span>
-                {{/if}}
+                <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                  {{#if primary_tag}}
+                    <span class="latest-item-tag">
+                      {{#match primary_tag.slug "newsletters"}}<span class="la-icon la-icon-palm"></span> 🤙 LATEST VIBES{{/match}}
+                      {{#match primary_tag.slug "eats"}}<span class="la-icon la-icon-taco"></span> 🍟 EATS{{/match}}
+                      {{#match primary_tag.slug "events"}}<span class="la-icon la-icon-skyline"></span> 📆 EVENTS{{/match}}
+                      {{#match primary_tag.slug "guides"}}<span class="la-icon la-icon-skyline"></span> 🗺️ GUIDES{{/match}}
+                      {{#match primary_tag.slug "curators"}}<span class="la-icon la-icon-shades"></span> 👋 CURATORS{{/match}}
+                      {{#match primary_tag.slug "news"}}<span class="la-icon la-icon-skyline"></span> 📰 NEWS{{/match}}
+                      {{#match primary_tag.slug "culture"}}<span class="la-icon la-icon-palm"></span> 🎭 CULTURE{{/match}}
+                      {{#match primary_tag.slug "business"}}<span class="la-icon la-icon-skyline"></span> 💼 BUSINESS{{/match}}
+                      {{#match primary_tag.slug "community"}}<span class="la-icon la-icon-palm"></span> 🏘️ COMMUNITY{{/match}}
+                      {{#match primary_tag.slug "entertainment"}}<span class="la-icon la-icon-shades"></span> 🎪 ENTERTAINMENT{{/match}}
+                      {{#match primary_tag.slug "health"}}<span class="la-icon la-icon-palm"></span> 💚 HEALTH{{/match}}
+                      {{#match primary_tag.slug "tech"}}<span class="la-icon la-icon-shades"></span> 💻 TECH{{/match}}
+                      {{#match primary_tag.slug "art"}}<span class="la-icon la-icon-palm"></span> 🎨 ART{{/match}}
+                      {{#unless primary_tag.slug}}<span class="la-icon la-icon-palm"></span> 📝 {{primary_tag.name}}{{/unless}}
+                    </span>
+                  {{else}}
+                    <span class="latest-item-tag"><span class="la-icon la-icon-palm"></span> 📝 GENERAL</span>
+                  {{/if}}
+                  <span class="read-time">⏱️ {{reading_time}}</span>
+                </div>
                 <time class="latest-item-date">{{date published_at format="MMM D, YYYY"}}</time>
               </div>
               
