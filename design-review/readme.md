@@ -1,0 +1,1 @@
+Design review is likely that of screen shots that I am taking to provide to the AI Curators so that they can see what designs are being implemented, likely on CurationsLA, https://la.curations.cc, or other sites due to 403 errors. 
