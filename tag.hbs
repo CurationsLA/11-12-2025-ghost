@@ -71,20 +71,20 @@
     <header class="section-header tag-header">
       <h2 class="section-title">
         <span class="section-emoji">
-          {{#match tag.slug "newsletters"}}<span class="la-icon la-icon-palm la-icon-large la-icon-lime"></span> 🤙{{/match}}
-          {{#match tag.slug "eats"}}<span class="la-icon la-icon-taco la-icon-large la-icon-lime"></span> 🍟{{/match}}
-          {{#match tag.slug "events"}}<span class="la-icon la-icon-skyline la-icon-large la-icon-lime"></span> 📆{{/match}}
-          {{#match tag.slug "curators"}}<span class="la-icon la-icon-shades la-icon-large la-icon-lime"></span> 👋{{/match}}
-          {{#match tag.slug "guides"}}<span class="la-icon la-icon-skyline la-icon-large la-icon-lime"></span> 🗺️{{/match}}
-          {{#match tag.slug "news"}}<span class="la-icon la-icon-skyline la-icon-large la-icon-lime"></span> 📰{{/match}}
-          {{#match tag.slug "culture"}}<span class="la-icon la-icon-palm la-icon-large la-icon-lime"></span> 🎭{{/match}}
-          {{#match tag.slug "business"}}<span class="la-icon la-icon-skyline la-icon-large la-icon-lime"></span> 💼{{/match}}
-          {{#match tag.slug "community"}}<span class="la-icon la-icon-palm la-icon-large la-icon-lime"></span> 🏘️{{/match}}
-          {{#match tag.slug "entertainment"}}<span class="la-icon la-icon-shades la-icon-large la-icon-lime"></span> 🎪{{/match}}
-          {{#match tag.slug "health"}}<span class="la-icon la-icon-palm la-icon-large la-icon-lime"></span> 💚{{/match}}
-          {{#match tag.slug "tech"}}<span class="la-icon la-icon-shades la-icon-large la-icon-lime"></span> 💻{{/match}}
-          {{#match tag.slug "art"}}<span class="la-icon la-icon-palm la-icon-large la-icon-lime"></span> 🎨{{/match}}
-          {{#unless tag.slug}}<span class="la-icon la-icon-palm la-icon-large la-icon-lime"></span> 📁{{/unless}}
+          {{#match tag.slug "newsletters"}}🤙{{/match}}
+          {{#match tag.slug "eats"}}🍟{{/match}}
+          {{#match tag.slug "events"}}📆{{/match}}
+          {{#match tag.slug "curators"}}👋{{/match}}
+          {{#match tag.slug "guides"}}🗺️{{/match}}
+          {{#match tag.slug "news"}}📰{{/match}}
+          {{#match tag.slug "culture"}}🎭{{/match}}
+          {{#match tag.slug "business"}}💼{{/match}}
+          {{#match tag.slug "community"}}🏘️{{/match}}
+          {{#match tag.slug "entertainment"}}🎪{{/match}}
+          {{#match tag.slug "health"}}💚{{/match}}
+          {{#match tag.slug "tech"}}💻{{/match}}
+          {{#match tag.slug "art"}}🎨{{/match}}
+          {{#unless tag.slug}}📁{{/unless}}
         </span>
         <span class="location-tag">{{tag.name}}</span>
       </h2>
@@ -102,23 +102,23 @@
                 <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
                   {{#if primary_tag}}
                     <span class="latest-item-tag">
-                      {{#match primary_tag.slug "newsletters"}}<span class="la-icon la-icon-palm"></span> 🤙 LATEST VIBES{{/match}}
-                      {{#match primary_tag.slug "eats"}}<span class="la-icon la-icon-taco"></span> 🍟 EATS{{/match}}
-                      {{#match primary_tag.slug "events"}}<span class="la-icon la-icon-skyline"></span> 📆 EVENTS{{/match}}
-                      {{#match primary_tag.slug "guides"}}<span class="la-icon la-icon-skyline"></span> 🗺️ GUIDES{{/match}}
-                      {{#match primary_tag.slug "curators"}}<span class="la-icon la-icon-shades"></span> 👋 CURATORS{{/match}}
-                      {{#match primary_tag.slug "news"}}<span class="la-icon la-icon-skyline"></span> 📰 NEWS{{/match}}
-                      {{#match primary_tag.slug "culture"}}<span class="la-icon la-icon-palm"></span> 🎭 CULTURE{{/match}}
-                      {{#match primary_tag.slug "business"}}<span class="la-icon la-icon-skyline"></span> 💼 BUSINESS{{/match}}
-                      {{#match primary_tag.slug "community"}}<span class="la-icon la-icon-palm"></span> 🏘️ COMMUNITY{{/match}}
-                      {{#match primary_tag.slug "entertainment"}}<span class="la-icon la-icon-shades"></span> 🎪 ENTERTAINMENT{{/match}}
-                      {{#match primary_tag.slug "health"}}<span class="la-icon la-icon-palm"></span> 💚 HEALTH{{/match}}
-                      {{#match primary_tag.slug "tech"}}<span class="la-icon la-icon-shades"></span> 💻 TECH{{/match}}
-                      {{#match primary_tag.slug "art"}}<span class="la-icon la-icon-palm"></span> 🎨 ART{{/match}}
-                      {{#unless primary_tag.slug}}<span class="la-icon la-icon-palm"></span> 📝 {{primary_tag.name}}{{/unless}}
+                      {{#match primary_tag.slug "newsletters"}}🤙 LATEST VIBES{{/match}}
+                      {{#match primary_tag.slug "eats"}}🍟 EATS{{/match}}
+                      {{#match primary_tag.slug "events"}}📆 EVENTS{{/match}}
+                      {{#match primary_tag.slug "guides"}}🗺️ GUIDES{{/match}}
+                      {{#match primary_tag.slug "curators"}}👋 CURATORS{{/match}}
+                      {{#match primary_tag.slug "news"}}📰 NEWS{{/match}}
+                      {{#match primary_tag.slug "culture"}}🎭 CULTURE{{/match}}
+                      {{#match primary_tag.slug "business"}}💼 BUSINESS{{/match}}
+                      {{#match primary_tag.slug "community"}}🏘️ COMMUNITY{{/match}}
+                      {{#match primary_tag.slug "entertainment"}}🎪 ENTERTAINMENT{{/match}}
+                      {{#match primary_tag.slug "health"}}💚 HEALTH{{/match}}
+                      {{#match primary_tag.slug "tech"}}💻 TECH{{/match}}
+                      {{#match primary_tag.slug "art"}}🎨 ART{{/match}}
+                      {{#unless primary_tag.slug}}📝 {{primary_tag.name}}{{/unless}}
                     </span>
                   {{else}}
-                    <span class="latest-item-tag"><span class="la-icon la-icon-palm"></span> 📝 GENERAL</span>
+                    <span class="latest-item-tag">📝 GENERAL</span>
                   {{/if}}
                   <span class="read-time">⏱️ {{reading_time}}</span>
                 </div>
