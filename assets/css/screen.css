@@ -998,7 +998,261 @@ mark, ::selection {
 }
 
 /* Exclude homepage and clickable article links from underlines */
-.latest-item a, 
-.latest-item-link { 
-  text-decoration: none !important; 
+.latest-item a,
+.latest-item-link {
+  text-decoration: none !important;
+}
+
+/* ========================================
+   BRUTALIST LA ICON SYSTEM - CSS ONLY
+   Pure geometric shapes, no SVGs, maximum chunky
+   ======================================== */
+
+/* Base Icon Container */
+.la-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+.la-icon-large {
+  width: 48px;
+  height: 48px;
+}
+
+.la-icon-hero {
+  width: 80px;
+  height: 80px;
+}
+
+/* PALM TREE ICON - Geometric Brutalist */
+.la-icon-palm {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.la-icon-palm::before {
+  /* Tree trunk - chunky rectangle */
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 20px;
+  background: #000;
+  border: 2px solid #000;
+}
+
+.la-icon-palm::after {
+  /* Palm fronds - geometric diamond shape */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 16px;
+  height: 16px;
+  background: #000;
+  border: 2px solid #000;
+  box-shadow:
+    -8px -8px 0 0 #000,
+    8px -8px 0 0 #000,
+    -8px 8px 0 0 #000,
+    8px 8px 0 0 #000;
+}
+
+/* TACO ICON - Chunky Half Circle */
+.la-icon-taco {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.la-icon-taco::before {
+  /* Taco shell - thick arc using borders */
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 12px;
+  border: 3px solid #000;
+  border-top: 3px solid #000;
+  border-bottom: none;
+  border-radius: 0;
+  background: transparent;
+}
+
+.la-icon-taco::after {
+  /* Taco filling - geometric rectangles */
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 4px;
+  background: #000;
+  box-shadow:
+    0 3px 0 0 #000,
+    0 6px 0 0 #000;
+}
+
+/* SUNGLASSES ICON - Brutalist Rectangles */
+.la-icon-shades {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.la-icon-shades::before {
+  /* Left lens - chunky square */
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 8px;
+  background: #000;
+  border: 2px solid #000;
+}
+
+.la-icon-shades::after {
+  /* Right lens - chunky square */
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 8px;
+  background: #000;
+  border: 2px solid #000;
+  box-shadow: -6px 0 0 -6px #000; /* Bridge between lenses */
+}
+
+/* SKYLINE ICON - Geometric Buildings */
+.la-icon-skyline {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.la-icon-skyline::before {
+  /* Building cluster - stacked rectangles */
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  width: 6px;
+  height: 18px;
+  background: #000;
+  box-shadow:
+    8px 4px 0 0 #000,
+    16px 0px 0 0 #000,
+    8px 4px 0 0 #000;
+}
+
+.la-icon-skyline::after {
+  /* Tall building accent */
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 12px;
+  width: 6px;
+  height: 22px;
+  background: #000;
+}
+
+/* Icon Badge System - Inline Category Icons */
+.icon-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: var(--lime);
+  border: 2px solid #000;
+  font-weight: 900;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.icon-badge-purple {
+  background: var(--purple);
+  color: #fff;
+}
+
+/* Icon in Navigation Items */
+.nav-icon-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Large Hero Icons for Error Pages / Special Sections */
+.hero-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero-icon-container .la-icon {
+  width: 100px;
+  height: 100px;
+  border: 4px solid #000;
+  background: var(--lime);
+  padding: 20px;
+  box-shadow: 0 6px 0 #000;
+}
+
+/* Animated Icon Variants - Hover Effects */
+.la-icon-interactive {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.la-icon-interactive:hover {
+  transform: translateY(-2px);
+}
+
+/* Icon Color Variants */
+.la-icon-lime {
+  background: var(--lime);
+  border: 2px solid #000;
+  padding: 6px;
+  box-shadow: 0 2px 0 #000;
+}
+
+.la-icon-purple {
+  background: var(--purple);
+  border: 2px solid #000;
+  padding: 6px;
+  box-shadow: 0 2px 0 #000;
+}
+
+/* Mobile Icon Adjustments */
+@media (max-width: 768px) {
+  .la-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .la-icon-large {
+    width: 40px;
+    height: 40px;
+  }
+
+  .la-icon-hero {
+    width: 60px;
+    height: 60px;
+  }
 }
