@@ -123,22 +123,20 @@
               <div class="latest-item-header">
                 <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
                   {{#if primary_tag}}
-                    <span class="latest-item-tag">
-                      {{#match primary_tag.slug "newsletters"}}🤙 LATEST VIBES{{/match}}
-                      {{#match primary_tag.slug "eats"}}🍟 EATS{{/match}}
-                      {{#match primary_tag.slug "events"}}📆 EVENTS{{/match}}
-                      {{#match primary_tag.slug "guides"}}🗺️ GUIDES{{/match}}
-                      {{#match primary_tag.slug "curators"}}👋 CURATORS{{/match}}
-                      {{#match primary_tag.slug "news"}}📰 NEWS{{/match}}
-                      {{#match primary_tag.slug "culture"}}🎭 CULTURE{{/match}}
-                      {{#match primary_tag.slug "business"}}💼 BUSINESS{{/match}}
-                      {{#match primary_tag.slug "community"}}🏘️ COMMUNITY{{/match}}
-                      {{#match primary_tag.slug "entertainment"}}🎪 ENTERTAINMENT{{/match}}
-                      {{#match primary_tag.slug "health"}}💚 HEALTH{{/match}}
-                      {{#match primary_tag.slug "tech"}}💻 TECH{{/match}}
-                      {{#match primary_tag.slug "art"}}🎨 ART{{/match}}
-                      {{#unless primary_tag.slug}}📝 {{primary_tag.name}}{{/unless}}
-                    </span>
+                    {{#match primary_tag.slug "newsletters"}}<span class="latest-item-tag tag-newsletters">🤙 LATEST VIBES</span>{{/match}}
+                    {{#match primary_tag.slug "eats"}}<span class="latest-item-tag tag-eats">🍟 EATS</span>{{/match}}
+                    {{#match primary_tag.slug "events"}}<span class="latest-item-tag tag-events">📆 EVENTS</span>{{/match}}
+                    {{#match primary_tag.slug "guides"}}<span class="latest-item-tag tag-guides">🗺️ GUIDES</span>{{/match}}
+                    {{#match primary_tag.slug "curators"}}<span class="latest-item-tag tag-curators">👋 CURATORS</span>{{/match}}
+                    {{#match primary_tag.slug "community"}}<span class="latest-item-tag tag-community">🏘️ COMMUNITY</span>{{/match}}
+                    {{#match primary_tag.slug "news"}}<span class="latest-item-tag">📰 NEWS</span>{{/match}}
+                    {{#match primary_tag.slug "culture"}}<span class="latest-item-tag">🎭 CULTURE</span>{{/match}}
+                    {{#match primary_tag.slug "business"}}<span class="latest-item-tag">💼 BUSINESS</span>{{/match}}
+                    {{#match primary_tag.slug "entertainment"}}<span class="latest-item-tag">🎪 ENTERTAINMENT</span>{{/match}}
+                    {{#match primary_tag.slug "health"}}<span class="latest-item-tag">💚 HEALTH</span>{{/match}}
+                    {{#match primary_tag.slug "tech"}}<span class="latest-item-tag">💻 TECH</span>{{/match}}
+                    {{#match primary_tag.slug "art"}}<span class="latest-item-tag">🎨 ART</span>{{/match}}
+                    {{#unless primary_tag.slug}}<span class="latest-item-tag">📝 {{primary_tag.name}}</span>{{/unless}}
                   {{else}}
                     <span class="latest-item-tag">📝 GENERAL</span>
                   {{/if}}
