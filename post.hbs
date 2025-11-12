@@ -44,6 +44,13 @@
         <div class="post-widgets-holder hidden"></div>
       {{/if}}
 
+      <!-- Share Button -->
+      <div class="post-share-section">
+        <button class="share-button" onclick="shareArticle('{{title}}', '{{url absolute="true"}}')" aria-label="Share this article">
+          🤙 <span>Share with a friend</span>
+        </button>
+      </div>
+
       <section class="post-comments" aria-label="Comments">
         {{ghost_comments}}
       </section>

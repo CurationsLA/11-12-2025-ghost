@@ -6,70 +6,82 @@ ALL INLINE STYLING - Ghost strips <style> tags from emails
 Colors: Lime Green #EBF99A, Purple #8B5CF6, Black #111111
 --}}
 
-{{!-- Header Banner --}}
-<div style="background-color: #8B5CF6; color: #ffffff; text-align: center; padding: 24px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;">
-  <h1 style="margin: 0; font-size: 2em; font-weight: bold; line-height: 1.2;">🤙 Good Vibes × Hyper-Local LA Culture</h1>
+{{!-- Gmail Clipping Prevention - Hidden spacer text --}}
+<div style="display: none; max-height: 0px; overflow: hidden;">
+  &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
 </div>
 
-<div style="max-width: 650px; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; line-height: 1.6; background: #ffffff;">
+{{!-- Header Banner --}}
+<div style="background-color: #8B5CF6; color: #ffffff; text-align: center; padding: 24px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; border-bottom: 3px solid #111111;">
+  <h1 style="margin: 0; font-size: 2em; font-weight: 900; line-height: 1.2; text-transform: uppercase; letter-spacing: -0.5px;">🤙 CURATIONSLA</h1>
+  <p style="margin: 8px 0 0 0; font-size: 0.9em; font-weight: 600;">Good Vibes × Hyper-Local LA Culture</p>
+</div>
+
+{{!-- Gmail Clipping Prevention CTA --}}
+<div style="max-width: 650px; margin: 0 auto; padding: 16px; background: #EBF99A; border-bottom: 2px solid #111111; text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;">
+  <span style="font-size: 14px; font-weight: 700; color: #111111; text-transform: uppercase; letter-spacing: 0.5px;">📧 Email cut off?</span>
+  <a href="{{url absolute="true"}}" style="color: #8B5CF6; font-weight: 800; text-decoration: underline; margin-left: 8px;">View Online →</a>
+</div>
+
+<div style="max-width: 650px; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; line-height: 1.6; background: #ffffff; padding: 0 16px;">
   {{#if title}}
-    <h2 style="text-align: center; color: #111111; font-size: 1.4em; font-weight: bold; margin: 30px 0 20px; line-height: 1.3; border-bottom: 2px solid #8B5CF6; padding-bottom: 10px;">{{title}}</h2>
+    <h2 style="text-align: center; color: #111111; font-size: 1.5em; font-weight: 900; margin: 30px 0 20px; line-height: 1.2; border-bottom: 3px solid #111111; padding-bottom: 12px; text-transform: uppercase; letter-spacing: -0.5px;">{{title}}</h2>
   {{/if}}
 
   {{#if feature_image}}
-    <div style="text-align: center; margin: 20px 0;">
-      <img src="{{feature_image}}" alt="{{title}}" style="max-width: 100%; height: auto; border-radius: 8px; border: 2px solid #8B5CF6; display: block; margin: 0 auto;">
+    <div style="text-align: center; margin: 24px 0;">
+      <img src="{{feature_image}}" alt="{{title}}" style="max-width: 100%; height: auto; border: 3px solid #111111; display: block; margin: 0 auto;">
     </div>
   {{/if}}
 
   {{#if excerpt}}
-    <div style="background-color: #EBF99A; color: #111111; border-radius: 8px; padding: 16px; margin: 20px 0; font-size: 1.1em; border-left: 4px solid #8B5CF6;">
-      <strong style="font-weight: bold;">Preview:</strong> {{excerpt}}
+    <div style="background-color: #EBF99A; color: #111111; padding: 18px; margin: 24px 0; font-size: 1.05em; border: 2px solid #111111; border-left: 6px solid #8B5CF6;">
+      <strong style="font-weight: 900; text-transform: uppercase;">Preview:</strong> {{excerpt}}
     </div>
   {{/if}}
 
-  {{!-- Main Content Area with Enhanced Styling --}}
-  <div style="margin: 24px 0; color: #333333; font-size: 16px; line-height: 1.6;">
-    {{!-- Enhanced content processing with inline styles --}}
+  {{!-- Main Content Area with Brutalist Styling --}}
+  <div style="margin: 24px 0; color: #111111; font-size: 16px; line-height: 1.65;">
+    {{!-- Brutalist content styling --}}
     <style type="text/css" data-inline>
-      h1, h2, h3, h4, h5, h6 { margin: 20px 0 12px; color: #111111; font-weight: bold; }
-      h2 { text-align: center; font-size: 1.4em; border-bottom: 2px solid #8B5CF6; padding-bottom: 8px; }
-      h3 { border-left: 4px solid #8B5CF6; padding-left: 16px; margin: 24px 0 12px; font-size: 1.2em; }
-      p { margin: 12px 0; line-height: 1.6; }
-      strong, b { font-weight: bold; }
-      mark, .highlight { background-color: #EBF99A; color: #111111; padding: 2px 4px; border-radius: 3px; }
-      a { color: #8B5CF6; text-decoration: underline; font-weight: 500; }
-      img, .gif { display: block; margin: 20px auto; max-width: 100%; border-radius: 8px; border: 2px solid #8B5CF6; }
-      .media-card { border: 2px solid #8B5CF6; border-radius: 10px; padding: 18px; margin: 20px 0; background: #ffffff; }
-      .divider { border-top: 2px solid #8B5CF6; margin: 24px 0; }
+      h1, h2, h3, h4, h5, h6 { margin: 24px 0 14px; color: #111111; font-weight: 900; text-transform: uppercase; letter-spacing: -0.5px; }
+      h2 { text-align: center; font-size: 1.5em; border-bottom: 3px solid #111111; padding-bottom: 10px; }
+      h3 { border-left: 6px solid #8B5CF6; padding-left: 16px; margin: 26px 0 14px; font-size: 1.25em; }
+      p { margin: 14px 0; line-height: 1.65; }
+      strong, b { font-weight: 900; }
+      mark, .highlight { background-color: #EBF99A; color: #111111; padding: 3px 6px; border: 1px solid #111111; }
+      a { color: #8B5CF6; text-decoration: underline; font-weight: 700; }
+      img, .gif { display: block; margin: 24px auto; max-width: 100%; border: 3px solid #111111; }
+      .media-card { border: 3px solid #111111; padding: 20px; margin: 24px 0; background: #EBF99A; }
+      .divider { border-top: 4px solid #111111; margin: 28px 0; }
     </style>
     {{{html}}}
   </div>
 
-  {{!-- Enhanced Media Card --}}
-  <div style="border: 2px solid #8B5CF6; border-radius: 10px; padding: 18px; margin: 22px 0; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-    <h4 style="color: #8B5CF6; margin: 0 0 12px 0; font-weight: bold; font-size: 1.1em; border-left: 4px solid #8B5CF6; padding-left: 12px;">🎯 Featured: LA Spotlight</h4>
-    <p style="color: #111111; margin: 0 0 12px 0; line-height: 1.5;">Discover the latest in LA's hyper-local culture, curated with good vibes for our community.</p>
-    <a href="{{@site.url}}" style="background-color: #EBF99A; color: #111111; border-radius: 6px; padding: 10px 20px; font-weight: bold; text-decoration: none; display: inline-block; margin-top: 8px; font-size: 14px; border: 2px solid #111111;">
+  {{!-- Brutalist CTA Card --}}
+  <div style="border: 3px solid #111111; padding: 20px; margin: 28px 0; background-color: #EBF99A;">
+    <h4 style="color: #111111; margin: 0 0 14px 0; font-weight: 900; font-size: 1.15em; border-left: 6px solid #8B5CF6; padding-left: 14px; text-transform: uppercase; letter-spacing: 0.5px;">🎯 LA Spotlight</h4>
+    <p style="color: #111111; margin: 0 0 14px 0; line-height: 1.6; font-weight: 500;">Discover the latest in LA's hyper-local culture, curated with good vibes for our community.</p>
+    <a href="{{@site.url}}" style="background-color: #8B5CF6; color: #ffffff; padding: 12px 24px; font-weight: 800; text-decoration: none; display: inline-block; margin-top: 8px; font-size: 14px; border: 2px solid #111111; text-transform: uppercase; letter-spacing: 0.5px;">
       Read More →
     </a>
   </div>
 
-  {{!-- Styled Divider --}}
-  <div style="border-top: 3px solid #8B5CF6; background: linear-gradient(to right, #8B5CF6, #EBF99A, #8B5CF6); height: 3px; margin: 32px 0; border-radius: 3px;"></div>
+  {{!-- Brutalist Divider --}}
+  <div style="border-top: 4px solid #111111; margin: 36px 0;"></div>
 
-  {{!-- Enhanced Footer --}}
-  <div style="text-align: center; margin-top: 32px; padding: 20px; background-color: #f8f9fa; border-radius: 8px; border: 2px solid #8B5CF6;">
-    <h3 style="margin: 0 0 16px 0; color: #8B5CF6; font-size: 1.1em; border-left: 4px solid #8B5CF6; padding-left: 12px; display: inline-block;">🤙 Stay Connected</h3>
-    <div style="margin: 16px 0;">
-      <a href="{{@site.url}}" style="color: #8B5CF6; text-decoration: underline; font-weight: bold; font-size: 16px; margin: 0 12px;">Visit CurationsLA</a>
+  {{!-- Brutalist Footer --}}
+  <div style="text-align: center; margin-top: 32px; padding: 24px; background-color: #111111; border: 3px solid #000000;">
+    <h3 style="margin: 0 0 18px 0; color: #EBF99A; font-size: 1.2em; font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px;">🤙 Stay Connected</h3>
+    <div style="margin: 18px 0;">
+      <a href="{{@site.url}}" style="color: #EBF99A; text-decoration: underline; font-weight: 800; font-size: 15px; margin: 0 10px;">Visit CurationsLA</a>
       <span style="color: #666666; margin: 0 8px;">•</span>
-      <a href="{{@site.url}}/tag/newsletters/" style="color: #8B5CF6; text-decoration: underline; font-weight: bold; font-size: 16px; margin: 0 12px;">Newsletter Archive</a>
+      <a href="{{@site.url}}/tag/newsletters/" style="color: #EBF99A; text-decoration: underline; font-weight: 800; font-size: 15px; margin: 0 10px;">Newsletter Archive</a>
     </div>
-    <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid #ddd;">
-      <a href="{{{unsubscribe_url}}}" style="color: #999999; text-decoration: underline; font-size: 14px;">Unsubscribe</a>
-      <span style="margin: 0 8px; color: #ccc;">|</span>
-      <span style="color: #666; font-size: 14px;">A project curated by Humans x AI at Curations.cc</span>
+    <div style="margin-top: 18px; padding-top: 18px; border-top: 2px solid #333333;">
+      <a href="{{{unsubscribe_url}}}" style="color: #999999; text-decoration: underline; font-size: 13px; font-weight: 600;">Unsubscribe</a>
+      <span style="margin: 0 10px; color: #555;">|</span>
+      <span style="color: #888; font-size: 13px; font-weight: 500;">Curated by Humans × AI at Curations.cc</span>
     </div>
   </div>
 

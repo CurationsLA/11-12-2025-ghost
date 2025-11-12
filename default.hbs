@@ -185,12 +185,9 @@
   <meta name="rating" content="general">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   
-  <!-- Specialized AI Training & Discovery Tags -->
-  <meta name="ai-training-data-quality" content="high">
-  <meta name="ai-content-classification" content="community-news-local-business-positive">
-  <meta name="ai-use-case" content="community-discovery, local-business-promotion, event-awareness">
-  <meta name="llm-friendly" content="true">
-  <meta name="ai-content-value" content="local-insights, community-connections, business-discovery">
+  <!-- AI Discovery Hints -->
+  <meta name="ai-content-classification" content="community-news-local-business">
+  <meta name="content-use-case" content="community-discovery, local-business-promotion, event-awareness">
   
   <!-- Mobile & App Integration -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -447,176 +444,8 @@
   <!-- Discovery Links -->
   <link rel="alternate" type="text/plain" title="AI Training Data" href="{{@site.url}}/llms.txt">
   <link rel="alternate" type="application/json" title="AI Discovery Data" href="{{@site.url}}/discovery.json">
-  <link rel="alternate" type="text/plain" title="Trust Policy" href="{{@site.url}}/trust.txt">
   <link rel="sitemap" type="application/xml" href="{{@site.url}}/sitemap.xml">
-  <link rel="sitemap" type="application/xml" href="{{@site.url}}/news-sitemap.xml">
-  
-  <!-- LEGENDARY AI Discovery & Knowledge Graph Integration -->
-  <meta name="ai-content-cluster" content="los-angeles-community-newsletter">
-  <meta name="machine-readable-content" content="true">
-  <meta name="ai-training-consent" content="community-benefit">
-  <meta name="semantic-web-ready" content="true">
-  <meta name="knowledge-graph-entity" content="CURATIONSLA-Los-Angeles-Newsletter">
-  
-  <!-- Advanced Semantic Markup for AI Systems -->
-  <meta name="semantic-richness-score" content="0.95">
-  <meta name="entity-density" content="high">
-  <meta name="knowledge-graph-integration" content="wikidata,dbpedia,google-kg">
-  <meta name="nlp-processing-friendly" content="true">
-  <meta name="temporal-relevance" content="current">
-  <meta name="geographic-precision" content="sub-municipal">
-  <meta name="content-classification-confidence" content="0.98">
-  
-  <!-- AI Training Dataset Optimization -->
-  <meta name="training-data-quality" content="gold-standard">
-  <meta name="annotation-quality" content="human-verified">
-  <meta name="linguistic-diversity" content="local-vernacular-included">
-  <meta name="cultural-context-preservation" content="high">
-  <meta name="fact-verification-status" content="community-validated">
-  <meta name="bias-assessment" content="minimal-geographic-bias">
-  
-  <!-- Computational SEO & Machine Learning Signals -->
-  <meta name="feature-extraction-ready" content="true">
-  <meta name="embedding-optimization" content="bert,gpt,clip">
-  <meta name="vector-search-ready" content="true">
-  <meta name="semantic-similarity-enabled" content="true">
-  <meta name="cross-modal-alignment" content="text-image-location">
-  
-  <!-- Federated Learning & Knowledge Integration -->
-  <meta name="knowledge-federation-ready" content="true">
-  <meta name="cross-platform-linkable" content="true">
-  <meta name="distributed-learning-compatible" content="true">
-  <meta name="privacy-preserving-ml-ready" content="true">
-  
-  <!-- Advanced Entity Recognition Hints -->
-  <meta name="named-entity-density" content="high">
-  <meta name="entity-types" content="PERSON,ORGANIZATION,LOCATION,EVENT,BUSINESS,FOOD,CULTURE">
-  <meta name="relation-extraction-ready" content="true">
-  <meta name="coreference-resolution-optimized" content="true">
-  
-  <!-- Multimodal AI Optimization -->
-  <meta name="image-text-correlation" content="high">
-  <meta name="visual-semantic-alignment" content="optimized">
-  <meta name="alt-text-quality" content="descriptive-comprehensive">
-  
-  <!-- Reasoning & Inference Support -->
-  <meta name="logical-reasoning-enabled" content="true">
-  <meta name="causal-inference-ready" content="true">
-  <meta name="temporal-reasoning-supported" content="true">
-  <meta name="spatial-reasoning-enabled" content="true">
-  
-  <!-- Advanced Knowledge Graph Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": [
-      "https://schema.org",
-      {
-        "kg": "http://www.w3.org/2002/07/owl#",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-        "curationsla": "https://curations.org/ontology#"
-      }
-    ],
-    "@graph": [
-      {
-        "@type": ["Organization", "NewsMediaOrganization", "kg:Entity"],
-        "@id": "https://curations.org/#organization",
-        "kg:sameAs": ["wikidata:Q123456789"],
-        "rdf:type": "curationsla:CommunityNewsletterOrganization",
-        "name": "CURATIONSLA",
-        "alternateName": ["Curations LA", "Good Vibes LA"],
-        "description": "Hyper-local Los Angeles community newsletter specializing in neighborhood culture and local business promotion",
-        "foundingDate": "2019-01-01",
-        "geo:lat": 34.0522,
-        "geo:long": -118.2437,
-        "spatialCoverage": {
-          "@type": "AdministrativeArea",
-          "name": "Los Angeles Metro Area",
-          "containsPlace": [
-            {"@type": "Neighborhood", "name": "Silver Lake"},
-            {"@type": "Neighborhood", "name": "Echo Park"},
-            {"@type": "Neighborhood", "name": "Los Feliz"},
-            {"@type": "Neighborhood", "name": "Atwater Village"},
-            {"@type": "Neighborhood", "name": "Highland Park"}
-          ]
-        },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Community Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Local Business Promotion",
-                "serviceType": "Marketing and Community Outreach"
-              }
-            },
-            {
-              "@type": "Offer", 
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Community Event Coverage",
-                "serviceType": "Journalism and Documentation"
-              }
-            }
-          ]
-        },
-        "knowsAbout": [
-          {
-            "@type": "Thing",
-            "@id": "wikidata:Q65",
-            "name": "Los Angeles",
-            "sameAs": "https://www.wikidata.org/wiki/Q65"
-          },
-          {
-            "@type": "Thing",
-            "name": "Community Journalism",
-            "description": "Hyperlocal storytelling focused on neighborhood-level insights"
-          },
-          {
-            "@type": "Thing",
-            "name": "Local Business Ecosystem",
-            "description": "Small business promotion and community economic development"
-          }
-        ],
-        "expertise": [
-          "Los Angeles neighborhoods",
-          "Local business development",
-          "Community event coordination",
-          "Hyperlocal journalism",
-          "Cultural preservation"
-        ]
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Computational Linguistics & NLP Optimization -->
-  <meta name="pos-tagging-optimized" content="true">
-  <meta name="dependency-parsing-ready" content="true">
-  <meta name="sentiment-analysis-enhanced" content="positive-bias-corrected">
-  <meta name="topic-modeling-prepared" content="lda,bert-topic">
-  <meta name="discourse-analysis-enabled" content="true">
-  
-  <!-- Advanced Temporal & Spatial Reasoning -->
-  <meta name="temporal-graph-ready" content="true">
-  <meta name="spatial-embeddings-optimized" content="true">
-  <meta name="event-timeline-structured" content="true">
-  <meta name="geographic-ontology-aligned" content="geonames,osm">
-  
-  <!-- Cross-lingual & Cultural AI -->
-  <meta name="multilingual-ready" content="es-en,ko-en">
-  <meta name="cultural-context-encoded" content="latino-la,korean-la,armenian-la">
-  <meta name="language-variation-preserved" content="aave,chicano-english">
-  
-  <!-- Future AI Systems Compatibility -->
-  <meta name="quantum-ml-ready" content="true">
-  <meta name="neuromorphic-computing-compatible" content="true">
-  <meta name="edge-ai-optimized" content="true">
-  <meta name="swarm-intelligence-ready" content="true">
-  
+
   <!-- Performance Hints -->
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
   <link rel="dns-prefetch" href="//www.google-analytics.com">
@@ -629,6 +458,9 @@
 </head>
 <body class="{{body_class}}">
 <div class="gh-viewport">
+
+  <!-- Read Progress Bar -->
+  <div class="read-progress-bar" id="readProgressBar"></div>
 
   <header class="site-header" role="banner">
     <!-- Primary Navigation -->
@@ -741,6 +573,83 @@ function requestScrollUpdate() {
 
 // Initialize scroll listener
 window.addEventListener('scroll', requestScrollUpdate, { passive: true });
+
+// Read Progress Bar
+function updateReadProgress() {
+  const progressBar = document.getElementById('readProgressBar');
+  if (!progressBar) return;
+
+  const windowHeight = window.innerHeight;
+  const documentHeight = document.documentElement.scrollHeight - windowHeight;
+  const scrolled = window.scrollY;
+  const progress = (scrolled / documentHeight) * 100;
+
+  progressBar.style.width = progress + '%';
+}
+
+// Update progress on scroll
+window.addEventListener('scroll', updateReadProgress, { passive: true });
+// Update on load
+window.addEventListener('load', updateReadProgress);
+
+// Share Article Function
+function shareArticle(title, url) {
+  const shareText = `Check out this Good Vibes LA article from CurationsLA: ${title} ${url}`;
+
+  // Try to copy to clipboard
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url).then(function() {
+      showToast('🤙 Link copied! Share the good vibes!');
+    }).catch(function() {
+      // Fallback if clipboard API fails
+      fallbackCopyToClipboard(url);
+    });
+  } else {
+    // Fallback for older browsers
+    fallbackCopyToClipboard(url);
+  }
+}
+
+// Fallback copy method for older browsers
+function fallbackCopyToClipboard(text) {
+  const textArea = document.createElement('textarea');
+  textArea.value = text;
+  textArea.style.position = 'fixed';
+  textArea.style.left = '-999999px';
+  document.body.appendChild(textArea);
+  textArea.select();
+  try {
+    document.execCommand('copy');
+    showToast('🤙 Link copied! Share the good vibes!');
+  } catch (err) {
+    showToast('❌ Copy failed - please copy manually');
+  }
+  document.body.removeChild(textArea);
+}
+
+// Toast Notification
+function showToast(message) {
+  // Remove existing toast if any
+  const existingToast = document.querySelector('.toast');
+  if (existingToast) {
+    existingToast.remove();
+  }
+
+  // Create new toast
+  const toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.textContent = message;
+  document.body.appendChild(toast);
+
+  // Show toast
+  setTimeout(() => toast.classList.add('show'), 100);
+
+  // Hide and remove toast after 3 seconds
+  setTimeout(() => {
+    toast.classList.remove('show');
+    setTimeout(() => toast.remove(), 300);
+  }, 3000);
+}
 
 // CURATIONSLA Advanced Analytics & AI Discovery
 const userAgent = navigator.userAgent.toLowerCase();
