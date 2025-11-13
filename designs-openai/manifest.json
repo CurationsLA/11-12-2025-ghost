@@ -1,0 +1,48 @@
+{
+  "style_system": "CurationsLA Brutalist Geometric",
+  "palette": {
+    "lime": "#D4FF5B",
+    "purple": "#A078FF",
+    "hot_pink": "#FF6B9D",
+    "sky_blue": "#74B9FF",
+    "sunshine_yellow": "#FFE66D",
+    "winter_blue": "#5AC8FA",
+    "frost_mint": "#B8F8E3",
+    "black": "#000000",
+    "off_white": "#F8F5EC"
+  },
+  "modules_per_neighborhood": [
+    "skyline_celebration_poster",
+    "shopping_icons",
+    "holiday_eats_icons",
+    "event_calendar_poster",
+    "walkable_mini_map",
+    "transportation_icons",
+    "weather_icons",
+    "gift_guide_module",
+    "landmark_mini_icons",
+    "holiday_pattern_pack",
+    "social_media_suite",
+    "website_banners",
+    "sticker_sheet",
+    "merch_mocks_optional"
+  ],
+  "neighborhoods": [
+    "beverly-hills",
+    "old-pasadena",
+    "long-beach",
+    "griffith-park-los-feliz",
+    "culver-city",
+    "downtown-burbank",
+    "glendale",
+    "west-hollywood",
+    "venice-beach",
+    "santa-monica",
+    "downtown-los-angeles"
+  ],
+  "export_naming_pattern": "curationsla_<neighborhood>_<module>_<descriptor>.<ext>",
+  "documentation": {
+    "readme": "README.md",
+    "neighborhood_briefs": "neighborhoods/*.md"
+  }
+}
