@@ -1859,14 +1859,14 @@ mark, ::selection {
   /* Media caption sizing for mobile */
   .post-content figcaption,
   .page-content figcaption {
-    font-size: 0.85rem;                 /* Further reduced from 0.9rem */
+    font-size: 0.7rem;                  /* Moderate reduction for mobile readability */
     font-weight: 600;                   /* Lighter for better mobile readability */
-    padding: 0.75rem 1rem;              /* Reduced padding */
+    padding: 0.5rem 0.75rem;            /* Reduced padding for smaller visual footprint */
   }
 
   .post-content figcaption a,
   .page-content figcaption a {
-    font-size: 0.9rem;                  /* Reduced from 0.95rem */
+    font-size: 0.75rem;                 /* Proportional to caption size */
     font-weight: 700;                   /* Lighter from 800 */
   }
 
