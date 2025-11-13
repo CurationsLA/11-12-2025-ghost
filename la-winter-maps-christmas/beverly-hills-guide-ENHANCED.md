@@ -232,9 +232,9 @@ Beverly Hills' holiday season delivers aspirational glamour grounded in genuine 
 
 **NOVEMBER**
 - **Thursday, Nov 13, 5-8pm** — Rodeo Drive Holiday Lighting Celebration with fireworks, performances, Santa arrival (rodeodrive-bh.com)
-- **Nov 13-Jan 4** — Glowing Gardens at Beverly Canon Gardens, nightly 5-11pm (lovebeverlyhills.com)
-- **Nov 13-Jan 4** — Lights on the Lily Pond at Beverly Gardens Park, shows every 15 min, 5:30-9:30pm (beverlyhills.org)
-- **Nov 14-Jan 5** — Jolly Trolley free transportation, Thu-Sun 6-9pm (beverlyhills.org)
+- **Nov 13, 2025 - Jan 4, 2026** — Glowing Gardens at Beverly Canon Gardens, nightly 5-11pm (lovebeverlyhills.com)
+- **Nov 13, 2025 - Jan 4, 2026** — Lights on the Lily Pond at Beverly Gardens Park, shows every 15 min, 5:30-9:30pm (beverlyhills.org)
+- **Nov 14, 2025 - Jan 5, 2026** — Jolly Trolley free transportation, Thu-Sun 6-9pm (beverlyhills.org)
 
 **DECEMBER**
 - **Dec 1-26** — Polar Bear Gift Shop at The Peninsula Beverly Hills (peninsula.com)
