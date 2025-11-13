@@ -32,7 +32,6 @@ The charming Old Town district becomes a pedestrian-friendly celebration hub wit
 
 ### Breakfast & Brunch
 
-### Breakfast & Brunch
 
 Start your holiday morning at **Urth Caffé** in Old Town Pasadena (260 S Raymond Ave), where organic coffee and seasonal pastries fuel shoppers exploring Colorado Boulevard. Breakfast items range from $12-18; expect weekend waits of 20-30 minutes after 9am. Open daily 6:30am-11pm (urthcaffe.com).
 
