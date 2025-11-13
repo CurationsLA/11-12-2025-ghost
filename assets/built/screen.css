@@ -12,12 +12,12 @@
   --purple: #8B5CF6;            /* Current purple */
 
   /* Old Beehiiv Revival Colors */
-  --hot-pink: #FF006E;          /* Vibrant magenta from old beehiiv design */
+  --hot-pink: #ff79cb;          /* Hot pink from new design */
   --sky-blue: #87CEEB;          /* Light sky blue from old beehiiv 'Latest Vibes' */
   --sunshine-yellow: #FFE66D;   /* Brighter yellow accent */
 
   /* Legacy Support */
-  --pink: #FF006E;              /* Alias for hot-pink */
+  --pink: #ff79cb;              /* Alias for hot-pink */
 
   /* Text & Background */
   --text: #000000;              /* Pure black for maximum contrast */
@@ -517,8 +517,8 @@ h3 .location-tag {
 }
 
 .latest-item-tag.tag-guides {
-  background: var(--sunshine-yellow);
-  color: #000;
+  background: var(--hot-pink);
+  color: #fff;
 }
 
 .latest-item-tag.tag-community {
@@ -884,6 +884,13 @@ mark, ::selection {
   transform: translateY(-100%);
 }
 
+/* Don't hide header on mobile - prevents hamburger menu from disappearing */
+@media (max-width: 900px) {
+  .site-header.hide-on-scroll {
+    transform: none;                       /* Disable hide on mobile */
+  }
+}
+
 /* Read Progress Bar */
 .read-progress-bar {
   position: fixed;
@@ -1142,7 +1149,7 @@ mark, ::selection {
 
   /* Primary Nav Mobile - Shown when open */
   .primary-nav {
-    position: absolute;
+    position: fixed;                       /* Fixed to viewport, not header */
     top: 74px;
     left: 0;
     width: 100%;
@@ -1150,7 +1157,7 @@ mark, ::selection {
     border-bottom: 3px solid #000;
     transform: translateY(-100%);
     transition: transform var(--transition);
-    z-index: 99;
+    z-index: 999;                          /* Higher z-index to stay above everything */
     box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* Lighter shadow */
     display: block !important; /* Override desktop hiding */
   }
@@ -1451,8 +1458,8 @@ mark, ::selection {
   border: 3px solid #000;
   border-top: none;
   background: var(--hot-pink);           /* Hot pink background */
-  font-weight: 700;
-  font-size: 0.95rem;
+  font-weight: 800;                      /* Heavier weight for readability */
+  font-size: 1.1rem;                     /* Bigger size for readability */
   font-style: normal;                    /* Normal, no italics */
   line-height: 1.5;
   color: #fff;
