@@ -110,7 +110,7 @@ Special holiday-themed tour of Greystone Mansion's interior with festive decorat
 Beverly Hills Community Dog Park hosts this festive gathering where pups can meet Santa and enjoy holiday treats with their fellow four-legged friends [TEMPLATE: time and additional details] (lovebeverlyhills.com).
 
 **Holiday Craft Fair at Beverly Hills Farmers' Market**
-**Sunday, December 15, 2025 | 9:00am - 12:30pm**
+**Sunday, December 14, 2025 | 9:00am - 12:30pm**
 Local artisans showcase handcrafted gifts, jewelry, art and holiday décor as an alternative to luxury retail. This is where savvy locals find unique presents you won't see on Rodeo Drive (beverlyhills.org).
 
 **Menorah Lighting Celebration**
