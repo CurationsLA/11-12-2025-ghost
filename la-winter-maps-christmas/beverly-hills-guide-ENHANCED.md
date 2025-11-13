@@ -450,7 +450,7 @@ Discover Beverly Hills' 2025 Christmas & Holiday season: Rodeo Drive lighting ce
 **What to verify before publication:**
 - Final hours/pricing for: 208 Rodeo, Scarpetta, Santa Paws time, Inside Mansion times
 - Confirm Virginia Robinson Gardens taking December reservations
-- Double-check Jolly Trolley runs through Jan 5 (sources say Jan 4 and Jan 5)
+- Jolly Trolley end date verified: runs through January 5, 2026
 - Verify Greystone reservation process still accurate
 
 **Suggestions for Ghost CMS implementation:**
