@@ -231,19 +231,19 @@ Beverly Hills' holiday season delivers aspirational glamour grounded in genuine 
 ### Holiday Calendar 2025
 
 **NOVEMBER**
-- **Thursday, Nov 13, 5-8pm** — Rodeo Drive Holiday Lighting Celebration with fireworks, performances, Santa arrival (rodeodrive-bh.com)
-- **Nov 13-Jan 4** — Glowing Gardens at Beverly Canon Gardens, nightly 5-11pm (lovebeverlyhills.com)
-- **Nov 13-Jan 4** — Lights on the Lily Pond at Beverly Gardens Park, shows every 15 min, 5:30-9:30pm (beverlyhills.org)
-- **Nov 14-Jan 5** — Jolly Trolley free transportation, Thu-Sun 6-9pm (beverlyhills.org)
+- **Thu, Nov 13, 5-8pm** — Rodeo Drive Holiday Lighting Celebration with fireworks, performances, Santa arrival (rodeodrive-bh.com)
+- **Nov 13, 2025 - Jan 4, 2026** — Glowing Gardens at Beverly Canon Gardens, nightly 5-11pm (lovebeverlyhills.com)
+- **Nov 13, 2025 - Jan 4, 2026** — Lights on the Lily Pond at Beverly Gardens Park, shows every 15 min, 5:30-9:30pm (beverlyhills.org)
+- **Nov 14, 2025 - Jan 5, 2026** — Jolly Trolley free transportation, Thu-Sun 6-9pm (beverlyhills.org)
 
 **DECEMBER**
-- **Dec 1-26** — Polar Bear Gift Shop at The Peninsula Beverly Hills (peninsula.com)
-- **Sat-Sun, Dec 6-7, 9am-4:30pm** — Holidays at Greystone Mansion & Gardens with Santa, crafts, caroling (beverlyhills.org)
-- **Sun, Dec 8** — Santa Paws Yappy Hour at Community Dog Park [TEMPLATE: time]
-- **Sun, Dec 15, 9am-12:30pm** — Holiday Craft Fair at Beverly Hills Farmers' Market (beverlyhills.org)
+- **Dec 1, 2025 - Dec 26, 2025** — Polar Bear Gift Shop at The Peninsula Beverly Hills (peninsula.com)
+- **Sat, Dec 6 - Sun, Dec 7, 9am-4:30pm** — Holidays at Greystone Mansion & Gardens with Santa, crafts, caroling (beverlyhills.org)
+- **Mon, Dec 8** — Santa Paws Yappy Hour at Community Dog Park [TEMPLATE: time]
+- **Mon, Dec 15, 9am-12:30pm** — Holiday Craft Fair at Beverly Hills Farmers' Market (beverlyhills.org)
 - **Mon, Dec 15, 5:30-6pm** — Menorah Lighting Celebration at Beverly Gardens Park (beverlyhills.org)
 - **Sat, Dec 20** — Holiday Edition: Inside the Mansion at Greystone [TEMPLATE: times] (beverlyhills.org)
-- **Dec 20-24** — Carolers at The Peninsula Beverly Hills lobby (peninsula.com)
+- **Dec 20, 2025 - Dec 24, 2025** — Carolers at The Peninsula Beverly Hills lobby (peninsula.com)
 - **Wed, Dec 24** — Christmas Eve dining at The Blvd, CUT, Culina, Polo Lounge, 208 Rodeo, Scarpetta
 - **Wed, Dec 24** — Santa visits The Peninsula Beverly Hills (peninsula.com)
 - **Thu, Dec 25** — Christmas Day dining at The Belvedere (Peninsula) and other select restaurants
