@@ -240,7 +240,7 @@ Beverly Hills' holiday season delivers aspirational glamour grounded in genuine 
 - **Dec 1-26** — Polar Bear Gift Shop at The Peninsula Beverly Hills (peninsula.com)
 - **Sat-Sun, Dec 6-7, 9am-4:30pm** — Holidays at Greystone Mansion & Gardens with Santa, crafts, caroling (beverlyhills.org)
 - **Sun, Dec 8** — Santa Paws Yappy Hour at Community Dog Park [TEMPLATE: time]
-- **Sun, Dec 15, 9am-12:30pm** — Holiday Craft Fair at Beverly Hills Farmers' Market (beverlyhills.org)
+- **Sun, Dec 14, 9am-12:30pm** — Holiday Craft Fair at Beverly Hills Farmers' Market (beverlyhills.org)
 - **Mon, Dec 15, 5:30-6pm** — Menorah Lighting Celebration at Beverly Gardens Park (beverlyhills.org)
 - **Sat, Dec 20** — Holiday Edition: Inside the Mansion at Greystone [TEMPLATE: times] (beverlyhills.org)
 - **Dec 20-24** — Carolers at The Peninsula Beverly Hills lobby (peninsula.com)
