@@ -1,7 +1,7 @@
 {
   "name": "super-secret-stuff",
-  "description": "CURATIONSLA Legendary Theme - Old Beehiiv Colors × Brutalist Buttons × Purple Accents",
-  "version": "19.0.0-BEEHIIV-COLORS",
+  "description": "CURATIONSLA Legendary Theme - Mobile Nav Fix × Hot Pink #ff79cb × Enhanced Captions",
+  "version": "20.0.0-MOBILE-FIX",
   "engines": {
     "ghost": ">=6.0.0"
   },
