@@ -11,10 +11,10 @@
   --lime-line: #EBF99A;
   --purple: #8B5CF6;            /* Current purple */
 
-  /* Old Beehiiv Revival Colors */
-  --hot-pink: #ff79cb;          /* Hot pink from new design */
-  --sky-blue: #87CEEB;          /* Light sky blue from old beehiiv 'Latest Vibes' */
-  --sunshine-yellow: #FFE66D;   /* Brighter yellow accent */
+  /* RADICAL 3-COLOR SYSTEM - Hot Pink + Purple + Lime */
+  --hot-pink: #ff79cb;          /* PRIMARY: Hot pink - main accent */
+  --sky-blue: #ff79cb;          /* DEPRECATED: Replaced with hot pink */
+  --sunshine-yellow: #8B5CF6;   /* DEPRECATED: Replaced with purple */
 
   /* Legacy Support */
   --pink: #ff79cb;              /* Alias for hot-pink */
@@ -40,11 +40,12 @@
   --shadow-elev: 0 6px 0 #000;     /* Increased from 3px to 6px */
   --shadow-heavy: 0 8px 0 #000;    /* Even chunkier option */
 
-  /* Tinted Backgrounds */
-  --muted-purple: #faf9ff;
-  --muted-pink: #fff0f8;
-  --muted-blue: #f0faff;
-  --muted-yellow: #fffbeb;
+  /* Tinted Backgrounds - SIMPLIFIED TO SINGLE COLOR */
+  --card-bg: #faf9ff;           /* Single purple tint for all boxes */
+  --muted-purple: #faf9ff;      /* Legacy support */
+  --muted-pink: #faf9ff;        /* Replaced with purple tint */
+  --muted-blue: #faf9ff;        /* Replaced with purple tint */
+  --muted-yellow: #faf9ff;      /* Replaced with purple tint */
 
   /* Accent System */
   --accent: #8B5CF6;
@@ -135,6 +136,7 @@ h3 .location-tag {
 /* Primary Navigation Wrapper */
 .primary-nav-wrapper {
   border-bottom: 2px solid #000;
+  overflow: visible;                        /* Ensure no clipping */
 }
 
 /* Secondary Navigation Sub-Bar */
@@ -750,7 +752,7 @@ mark, ::selection {
 
 /* CUSTOM Hot Pink/Ocean Blue Pagination - Old Beehiiv Vibes */
 .pagination-prev {
-  background: var(--sky-blue);
+  background: var(--purple);            /* Purple for BACK button */
   color: #fff;                          /* White text */
   border: 2px solid #000;
   box-shadow: 0 3px 0 #000;
@@ -1128,7 +1130,7 @@ mark, ::selection {
 
   /* Hide desktop nav on mobile unless opened */
   .main-nav:not(.open) {
-    display: none;
+    display: none !important;               /* Force hide with !important */
   }
 
   /* Show mobile menu toggle */
@@ -1139,7 +1141,13 @@ mark, ::selection {
 
   /* Hide secondary nav on mobile - items will be in hamburger menu */
   .secondary-nav-wrapper {
-    display: none;
+    display: none !important;               /* Force hide to prevent any leakage */
+  }
+
+  /* Ensure header doesn't clip or overflow */
+  .header-inner {
+    overflow: visible;
+    flex-wrap: nowrap;                      /* Prevent wrapping */
   }
 
   /* Show mobile-only items in hamburger menu */
