@@ -11,14 +11,12 @@
         <time datetime="{{date published_at format="YYYY-MM-DD"}}">{{date published_at format="MMMM D, YYYY"}}</time>
 
         {{#if primary_tag}}
-          <span class="latest-item-tag">
-            {{#match primary_tag.slug "newsletters"}}🤙 {{/match}}
-            {{#match primary_tag.slug "eats"}}🍟 {{/match}}
-            {{#match primary_tag.slug "events"}}📆 {{/match}}
-            {{#match primary_tag.slug "curators"}}👋 {{/match}}
-            {{#match primary_tag.slug "guides"}}🗺️ {{/match}}
-            {{primary_tag.name}}
-          </span>
+          {{#match primary_tag.slug "newsletters"}}<span class="latest-item-tag tag-newsletters">🤙 {{primary_tag.name}}</span>{{/match}}
+          {{#match primary_tag.slug "eats"}}<span class="latest-item-tag tag-eats">🍟 {{primary_tag.name}}</span>{{/match}}
+          {{#match primary_tag.slug "events"}}<span class="latest-item-tag tag-events">📆 {{primary_tag.name}}</span>{{/match}}
+          {{#match primary_tag.slug "guides"}}<span class="latest-item-tag tag-guides">🗺️ {{primary_tag.name}}</span>{{/match}}
+          {{#match primary_tag.slug "curators"}}<span class="latest-item-tag tag-curators">👋 {{primary_tag.name}}</span>{{/match}}
+          {{#match primary_tag.slug "community"}}<span class="latest-item-tag tag-community">🏘️ {{primary_tag.name}}</span>{{/match}}
         {{/if}}
 
         {{#if authors}}
