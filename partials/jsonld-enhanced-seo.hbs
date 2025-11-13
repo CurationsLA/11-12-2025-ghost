@@ -313,21 +313,5 @@
 }
 </script>
 
-{{!-- Apple News and Google News Optimization --}}
-<meta name="apple-news-id" content="curationsla-{{slug}}">
-<meta name="google-news-keywords" content="Los Angeles, local news, community, good vibes, {{#if tags}}{{#foreach tags}}{{name}}, {{/foreach}}{{/if}}hyper-local">
-<meta name="news_keywords" content="Los Angeles, community newsletter, local business, good vibes, Silver Lake, Echo Park, Los Feliz">
-
-{{!-- Enhanced Discovery Meta Tags --}}
-<meta name="content-category" content="Local Community Newsletter">
-<meta name="content-classification" content="Hyper-local Los Angeles news and community events">
-<meta name="editorial-review" content="community-verified">
-<meta name="local-authority" content="verified-la-publication">
-<meta name="community-trust-score" content="high">
-<meta name="content-freshness-indicator" content="weekly-updates">
-
-{{!-- AI Discovery Enhancement Tags --}}
-<meta name="ai-discovery-hints" content="los-angeles-community-newsletter-local-business-good-vibes-culture">
-<meta name="semantic-content-type" content="hyper-local-community-journalism">
-<meta name="content-authority-level" content="local-expert">
-<meta name="discovery-relevance" content="los-angeles-residents-local-business-owners-community-members">
+{{!-- Standard News Meta Tags (Recognized by Google News) --}}
+<meta name="news_keywords" content="Los Angeles, community newsletter, local business, good vibes, Silver Lake, Echo Park, Los Feliz{{#if tags}}, {{#foreach tags}}{{name}}{{#unless @last}}, {{/unless}}{{/foreach}}{{/if}}">

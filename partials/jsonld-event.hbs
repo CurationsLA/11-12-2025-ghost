@@ -1,0 +1,63 @@
+{{!-- Event Schema Markup for LA Community Events --}}
+{{!-- Include this in posts tagged with "events", "eats", or "guides" --}}
+{{#has tag="events,eats,guides"}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "@id": "{{url absolute="true"}}#event",
+  "name": "{{title}}",
+  "description": "{{#if excerpt}}{{excerpt}}{{else}}{{meta_description}}{{/if}}",
+  {{#if feature_image}}
+  "image": [
+    "{{feature_image}}"
+  ],
+  {{/if}}
+  "startDate": "{{date published_at format="YYYY-MM-DD"}}",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {
+    "@type": "Place",
+    "name": "Los Angeles, CA",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.0522,
+      "longitude": -118.2437
+    }
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "CurationsLA",
+    "url": "https://la.curations.cc"
+  },
+  "performer": {
+    "@type": "Organization",
+    "name": "Local LA Business"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "{{url absolute="true"}}",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "{{date published_at format="YYYY-MM-DD"}}"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Los Angeles Community Events"
+  },
+  "inLanguage": "en-US",
+  "isAccessibleForFree": true,
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Los Angeles Residents"
+  }
+}
+</script>
+{{/has}}

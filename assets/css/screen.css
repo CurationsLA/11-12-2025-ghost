@@ -1859,15 +1859,22 @@ mark, ::selection {
   /* Media caption sizing for mobile */
   .post-content figcaption,
   .page-content figcaption {
-    font-size: 0.9rem;                  /* Smaller than desktop 1.1rem */
-    font-weight: 700;                   /* Lighter than desktop 800 */
+    font-size: 0.85rem;                 /* Further reduced from 0.9rem */
+    font-weight: 600;                   /* Lighter for better mobile readability */
     padding: 0.75rem 1rem;              /* Reduced padding */
   }
 
   .post-content figcaption a,
   .page-content figcaption a {
-    font-size: 0.95rem;                 /* Slightly bigger than caption text */
-    font-weight: 800;                   /* Lighter than desktop 900 */
+    font-size: 0.9rem;                  /* Reduced from 0.95rem */
+    font-weight: 700;                   /* Lighter from 800 */
+  }
+
+  /* H3 sizing for mobile */
+  .post-content h3,
+  .page-content h3 {
+    font-size: 1rem;                    /* Reduced from 1.2rem desktop */
+    font-weight: 600;                   /* Lighter for mobile */
   }
 
   .post-content ol.step-list li {

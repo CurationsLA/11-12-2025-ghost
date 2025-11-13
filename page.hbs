@@ -21,7 +21,12 @@
       </header>
       {{#if feature_image}}
         <figure class="post-feature-frame">
-          <img src="{{feature_image}}" alt="{{title}}">
+          <img src="{{feature_image}}"
+               alt="{{title}}"
+               width="1200"
+               height="630"
+               fetchpriority="high"
+               decoding="async">
         </figure>
       {{/if}}
     {{/if}}

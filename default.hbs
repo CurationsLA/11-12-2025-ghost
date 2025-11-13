@@ -14,6 +14,9 @@
   {{!-- Enhanced SEO & AI Discovery --}}
   {{> "jsonld-enhanced-seo"}}
 
+  {{!-- Event Schema for LA Events Posts --}}
+  {{> "jsonld-event"}}
+
   {{ghost_head}}
   
   <!-- Post-Specific Enhanced SEO -->
@@ -94,71 +97,28 @@
   }
   </script>
   {{/post}}
-  
-  <meta name="editorial-policy" content="good-vibes-only, community-first, local-business-supporting">
-  <meta name="content-quality" content="human-reviewed, community-verified, locally-relevant">
-  <meta name="trustworthiness" content="established-2019, community-trusted, locally-verified">
-  
-  <!-- Geographic & Local SEO -->
+
+  <!-- Geographic & Local SEO (Validated) -->
   <meta name="geo.region" content="US-CA">
   <meta name="geo.placename" content="Los Angeles, California">
   <meta name="geo.position" content="34.0522;-118.2437">
   <meta name="ICBM" content="34.0522, -118.2437">
-  <meta name="locality" content="Los Angeles">
-  <meta name="region" content="California">
-  <meta name="country" content="United States">
-  
-  <!-- Publication & Content Meta -->
-  <meta name="publication" content="CURATIONSLA Newsletter">
-  <meta name="content-type" content="community newsletter">
-  <meta name="audience" content="Los Angeles residents, local business owners, community members">
-  <meta name="content-language" content="en-US">
-  <meta name="content-classification" content="community, local news, business directory, events">
-  
-  <!-- Structured Data Hints -->
-  <meta name="schema-type" content="Newsletter, LocalBusiness, Organization">
-  <meta name="content-category" content="Local News, Community Events, Business Directory">
-  
-  <!-- Advanced Discovery Meta -->
-  <meta name="discovery-engine-hints" content="local-community-newsletter-los-angeles-good-vibes">
-  <meta name="semantic-keywords" content="Los Angeles community, local businesses, neighborhood events, Silver Lake culture, Echo Park dining, Los Feliz entertainment">
-  <meta name="content-freshness" content="weekly-updates">
-  <meta name="update-frequency" content="weekly">
-  <meta name="content-depth" content="comprehensive-local-coverage">
-  
+
   <!-- RSS & Feed Discovery -->
   <link rel="alternate" type="application/rss+xml" title="CURATIONSLA RSS Feed" href="{{@site.url}}/rss/">
   <link rel="alternate" type="application/json" title="CURATIONSLA JSON Feed" href="{{@site.url}}/json/">
-  
-  <!-- Advanced Social & Discovery -->
-  <meta name="social-media-presence" content="instagram,twitter,threads">
-  <meta name="community-engagement" content="high">
-  <meta name="local-authority" content="verified">
-  
-  <!-- Performance & Technical SEO -->
-  <meta name="content-encoding" content="gzip">
-  <meta name="cache-control" content="public, max-age=3600">
-  <meta name="preload-strategy" content="critical-resources">
-  
-  <!-- Newsletter-Specific Meta -->
-  <meta name="newsletter-frequency" content="weekly">
-  <meta name="newsletter-focus" content="hyper-local Los Angeles community">
-  <meta name="subscriber-benefit" content="exclusive local business insights, community event updates">
-  
-  <!-- Enhanced Open Graph with Local Focus -->
+
+  <!-- Open Graph (Standard) -->
   <meta property="og:url" content="{{url absolute="true"}}">
   <meta property="og:title" content="{{#if meta_title}}{{meta_title}}{{else}}CURATIONSLA - Good Vibes LA Community Newsletter{{/if}}">
   <meta property="og:description" content="{{#if meta_description}}{{meta_description}}{{else}}Hyper-local Los Angeles newsletter with good vibes only. Local business spotlights, community events, and LA culture from Silver Lake to Eagle Rock.{{/if}}">
   <meta property="og:site_name" content="CURATIONSLA">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
-  <meta property="og:locality" content="Los Angeles">
-  <meta property="og:region" content="CA">
-  <meta property="og:country-name" content="USA">
   {{#if feature_image}}<meta property="og:image" content="{{feature_image}}">{{/if}}
   <meta property="og:image:alt" content="CURATIONSLA - Los Angeles Community Newsletter">
-  
-  <!-- Enhanced Twitter Cards with Community Focus -->
+
+  <!-- Twitter Cards (Standard) -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@CurationsX">
   <meta name="twitter:creator" content="@CurationsX">
@@ -166,46 +126,30 @@
   <meta name="twitter:description" content="{{#if meta_description}}{{meta_description}}{{else}}LA's positive community newsletter featuring local businesses and events. Silver Lake, Echo Park, Los Feliz & beyond.{{/if}}">
   {{#if feature_image}}<meta name="twitter:image" content="{{feature_image}}">{{/if}}
   <meta name="twitter:image:alt" content="CURATIONSLA Community Newsletter">
-  
-  <!-- Local Business & Community Schema Preparation -->
-  <meta name="business-type" content="community newsletter, local media">
-  <meta name="service-area" content="Los Angeles, Silver Lake, Echo Park, Los Feliz, Atwater Village, Highland Park">
-  
-  <!-- Advanced News & Publication Meta -->
+
+  <!-- Google News & Keywords -->
   <meta name="news_keywords" content="Los Angeles, local news, community, good vibes, hyper-local, Silver Lake, Echo Park, Los Feliz, neighborhood events">
-  <meta name="news-category" content="Local, Community, Business">
-  <meta name="publication-type" content="newsletter">
-  <meta name="content-tier" content="community-focused">
-  
-  <!-- Discovery Engine Optimization -->
-  <meta name="crawl-delay" content="1">
-  <meta name="revisit-after" content="7 days">
-  <meta name="content-language" content="en">
-  <meta name="distribution" content="global">
-  <meta name="rating" content="general">
+
+  <!-- Robots & Crawling -->
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   
-  <!-- AI Discovery Hints -->
-  <meta name="ai-content-classification" content="community-news-local-business">
-  <meta name="content-use-case" content="community-discovery, local-business-promotion, event-awareness">
-  
-  <!-- Mobile & App Integration -->
+  <!-- Mobile & PWA Optimization -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="CURATIONSLA">
-  
-  <!-- Advanced Link Relations -->
-  <link rel="shortlink" href="{{@site.url}}">
-  <link rel="publisher" href="{{@site.url}}">
-  <link rel="me" href="{{@site.url}}/about/">
-  <link rel="author" href="{{@site.url}}/about/">
-  
-  <!-- Content Discovery Enhancement -->
-  <meta name="content-topics" content="Los Angeles community, local business, neighborhood events, good vibes culture, hyper-local news">
-  <meta name="target-audience" content="Los Angeles residents, local business owners, community enthusiasts">
-  <meta name="expertise-area" content="Los Angeles neighborhoods, local business ecosystem, community events">
-  <meta name="authority-signals" content="established-community-presence, local-business-partnerships, reader-engagement">
+  <meta name="theme-color" content="#8B5CF6">
+  <link rel="manifest" href="{{asset "manifest.json"}}">
+
+  <!-- Apple Touch Icons (Multiple Sizes for Optimal Display) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{asset "icons/apple-touch-icon-180x180.png"}}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{asset "icons/apple-touch-icon-152x152.png"}}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{asset "icons/apple-touch-icon-120x120.png"}}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{asset "icons/favicon-32x32.png"}}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{asset "icons/favicon-16x16.png"}}">
+
+  <!-- Canonical URL (Critical for SEO) -->
+  <link rel="canonical" href="{{url absolute="true"}}">
   
   <!-- Enhanced Local Business & Newsletter Schema with AI Discovery -->
   <script type="application/ld+json">
@@ -449,12 +393,17 @@
   <!-- Performance Hints -->
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
   <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
+
+  <!-- Optimized Font Loading with Preload & Display Swap -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Roboto:wght@400;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet"></noscript>
+
   {{> "jsonld-news"}}
   {{> "ai-discovery-breadcrumbs"}}
   {{ghost_head}}
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="{{body_class}}">
 <div class="gh-viewport">
@@ -819,6 +768,24 @@ document.addEventListener('DOMContentLoaded', function() {
     link.addEventListener('click', function() {
       trackNewsletterSignup('navigation');
     });
+  });
+
+  // Optimize content images with lazy loading (exclude feature images)
+  const contentImages = document.querySelectorAll('.post-content img, .page-content img');
+  contentImages.forEach((img, index) => {
+    // First image already loaded, lazy load the rest
+    if (index > 0) {
+      img.setAttribute('loading', 'lazy');
+    }
+    img.setAttribute('decoding', 'async');
+
+    // Add width/height if missing to prevent CLS
+    if (!img.hasAttribute('width') && img.naturalWidth) {
+      img.setAttribute('width', img.naturalWidth);
+    }
+    if (!img.hasAttribute('height') && img.naturalHeight) {
+      img.setAttribute('height', img.naturalHeight);
+    }
   });
 });
 </script>
