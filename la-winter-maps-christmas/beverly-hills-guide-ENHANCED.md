@@ -1,4 +1,3 @@
----
 # Beverly Hills Christmas & Holiday Guide 2025
 
 **The CurationsLA Christmas and Holiday Guide to Beverly Hills**
