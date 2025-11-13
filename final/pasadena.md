@@ -62,7 +62,6 @@ For a classic brunch experience, head to **The Raymond 1886** (1250 S Fair Oaks 
 
 ### Major Holiday Events
 
-### Major Holiday Events
 
 **Pasadena Tree Lighting Ceremony**
 **Late November 2025 (typically Friday before Thanksgiving) | 5:30pm - 8:00pm**
