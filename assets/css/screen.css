@@ -22,7 +22,7 @@
   /* Text & Background */
   --text: #000000;              /* Pure black for maximum contrast */
   --text-soft: #444;
-  --bg: #FFF8E7;                /* Budapest Park warm cream - LEGENDARY */
+  --bg: #F8F8F8;                /* Seasalt - Let the colors POP! */
 
   /* Typography */
   --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -1466,8 +1466,8 @@ mark, ::selection {
   border: 3px solid #000;
   border-top: none;
   background: var(--hot-pink);           /* Hot pink background */
-  font-weight: 800;                      /* Heavier weight for readability */
-  font-size: 1.1rem;                     /* Bigger size for readability */
+  font-weight: 700;                      /* Reduced weight for platform */
+  font-size: 0.95rem;                    /* Reduced size for platform */
   font-style: normal;                    /* Normal, no italics */
   line-height: 1.5;
   color: #fff;
@@ -1478,8 +1478,8 @@ mark, ::selection {
 .page-content figcaption a {
   color: #fff;
   text-decoration: none;                 /* Remove underline for cleaner look */
-  font-weight: 900;                      /* Extra heavy for emphasis */
-  font-size: 1.15rem;                    /* Slightly bigger than caption text */
+  font-weight: 800;                      /* Reduced from 900 */
+  font-size: 1rem;                       /* Slightly bigger than caption text */
   transition: opacity 0.2s ease;
 }
 
