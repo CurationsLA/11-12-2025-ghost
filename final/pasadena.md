@@ -19,7 +19,6 @@
 
 ## Introduction
 
-## Introduction
 
 Pasadena transforms into a Victorian holiday wonderland each winter, where century-old traditions meet contemporary cultural celebrations. Known worldwide for hosting the Tournament of Roses Parade on New Year's Day, this historic city begins its festivities weeks earlier with elaborate tree lightings, world-class museum exhibitions and dining experiences set against a backdrop of Craftsman architecture and California sunshine (cityofpasadena.net). 
 
