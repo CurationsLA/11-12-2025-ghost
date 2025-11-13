@@ -45,7 +45,7 @@ Afternoon tea at **The Peninsula Beverly Hills** presents a refined holiday trad
 
 ### Christmas Eve Dining (December 24, 2025)
 
-**THE Blvd at Beverly Wilshire** offers Christmas Eve dining from 6pm to 10pm with an evening amid festive décor, solo pianist, and a special four-course set menu featuring seasonal favourites like French onion soup and tender herb-crusted lamb loin, ending with holiday-inspired ginger crème brûlée. Priced at $180 per adult and $65 for children 6 to 12 years (fourseasons.com/beverlywilshire).
+**THE Blvd at Beverly Wilshire** offers Christmas Eve dining from 6pm to 10pm with an evening amid festive décor, solo pianist, and a special four-course set menu featuring seasonal favorites like French onion soup and tender herb-crusted lamb loin, ending with holiday-inspired ginger crème brûlée. Priced at $180 per adult and $65 for children 6 to 12 years (fourseasons.com/beverlywilshire).
 
 **CUT by Wolfgang Puck** (also at Beverly Wilshire) offers a festive Christmas Eve menu with seasonal specials like Roasted Chestnut Soup with Black Trumpet Mushrooms, Red Wine Braised Bone-In Short Rib, and Eggnog Cheesecake (fourseasons.com/beverlywilshire).
 
