@@ -1466,9 +1466,18 @@ mark, ::selection {
   box-shadow: 0 3px 0 #000;
 }
 
-.post-content figcaption a {
+.post-content figcaption a,
+.page-content figcaption a {
   color: #fff;
-  text-decoration: underline;            /* Keep hyperlink underline */
+  text-decoration: none;                 /* Remove underline for cleaner look */
+  font-weight: 900;                      /* Extra heavy for emphasis */
+  font-size: 1.15rem;                    /* Slightly bigger than caption text */
+  transition: opacity 0.2s ease;
+}
+
+.post-content figcaption a:hover,
+.page-content figcaption a:hover {
+  opacity: 0.85;                         /* Subtle hover effect */
 }
 
 .post-content figure img,
