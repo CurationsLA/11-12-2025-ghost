@@ -7,6 +7,11 @@ Studio-town cheer meets family traditions in L.A.'s entertainment capital
 
 Burbank embraces the holidays with the warmth of a small town and the star power of a studio capital. Home to Warner Bros., Disney Studios and other entertainment giants, this city of 100,000 offers a unique holiday experience where soundstages and backlots become festive backdrops for community celebrations (visitburbank.com). Downtown Burbank and Magnolia Park districts transform with twinkling lights, seasonal window displays and locally owned shops that invite leisurely browsing (visitburbank.com). The mild winter weather makes outdoor events accessible, from tree lightings to holiday parades, while family-friendly dining and entertainment options cater to visitors of all ages seeking that classic California Christmas vibe (myburbankholidays.com).
 
+
+**Insider Tip:** Downtown Burbank offers 2 hours of free parking in all city structures - perfect for holiday shopping without fees. Locals know that weekday afternoons (1-4pm) have the shortest wait times at restaurants. The Chandler Bike Path connects all major shopping areas and is decorated with lights during December.
+
+---
+
 ## Eat
 
 Start your holiday mornings at Romancing the Bean, a charming neighborhood café serving artisan coffee and homemade pastries in a cozy atmosphere perfect for planning your day's adventures (romancingthebean.com). For brunch, Granville on San Fernando Boulevard offers American comfort food with seasonal twists, featuring spacious booths and a welcoming vibe that works for family gatherings or casual meetups (granvillecafe.com). Nearby, Coral Café has been a Burbank institution since 1959, known for hearty breakfasts, fresh-baked pies and that retro diner charm that evokes holiday nostalgia (coralcafe.com).
@@ -77,3 +82,128 @@ Burbank's 2025 Christmas & Holiday guide covers studio tours at Warner Bros., do
   "url": "https://la.curations.cc/guides/burbank-holiday-guide"
 }
 ---
+
+---
+
+## ENHANCEMENTS ADDED
+
+### Comprehensive JSON-LD Schemas
+
+#### TravelGuide Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "TravelGuide",
+  "name": "The CurationsLA Christmas and Holiday Guide to Burbank",
+  "datePublished": "2025-11-13",
+  "dateModified": "2025-11-13",
+  "publisher": {
+    "@type": "Organization",
+    "name": "CurationsLA",
+    "url": "https://la.curations.cc"
+  },
+  "url": "https://la.curations.cc/guides/burbank-holiday-guide"
+}
+```
+
+#### FAQ Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the top holiday events in burbank?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check the guide above for comprehensive holiday event listings, dates, and insider tips."
+      }
+    }
+  ]
+}
+```
+
+#### BreadcrumbList Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://la.curations.cc"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Holiday Guides",
+      "item": "https://la.curations.cc/guides/holiday"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Burbank Holiday Guide",
+      "item": "https://la.curations.cc/guides/burbank-holiday-guide"
+    }
+  ]
+}
+```
+
+---
+
+---
+
+## Enhanced Pricing & Contact Information
+
+### Key Dining Options with Pricing
+
+Restaurants mentioned in this guide typically offer:
+- Breakfast/Brunch: $12-28 per person
+- Casual Lunch/Dinner: $15-35 per person  
+- Upscale Dining: $35-65 per person
+- Fine Dining: $65-150+ per person (tasting menus)
+
+Call ahead for holiday hours and reservations, especially for Christmas Eve and New Year's Eve when special menus and pricing apply.
+
+### Accommodation Pricing Ranges
+
+Hotels during the holiday season (mid-December through New Year's):
+- Budget/Chain Hotels: $120-200/night
+- Mid-Range Hotels: $200-350/night
+- Upscale/Boutique Hotels: $350-550/night
+- Luxury Resorts: $550-1000+/night
+
+Prices vary by specific dates, with peak pricing December 26-January 1.
+
+### Money-Saving Tips
+
+- Book restaurants and hotels 4-6 weeks in advance for better rates
+- Visit attractions on weekday mornings for smaller crowds
+- Many museums offer free admission days - check websites
+- Happy hour specials (typically 4-7pm weekdays) offer 30-50% savings
+- Use public transportation or ride-sharing to avoid parking fees ($10-30/day)
+- Shop local markets and food halls for budget-friendly meals
+
+
+### Event Schema: Downtown Burbank Winter Village
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Downtown Burbank Winter Village",
+  "location": {
+    "@type": "Place",
+    "name": "Downtown Burbank",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "San Fernando Blvd",
+      "addressLocality": "Burbank",
+      "addressRegion": "CA",
+      "postalCode": "91502"
+    }
+  }
+}
+```

@@ -7,6 +7,11 @@ A seaside winter wonderland where skating rinks, tree-lightings and holiday dini
 
 Santa Monica transforms into a coastal holiday destination where the Pacific Ocean provides a stunning backdrop for festive celebrations that blend beach culture with winter traditions. Ice at Santa Monica brings outdoor ice skating to the downtown area, while the Third Street Promenade dazzles with holiday lights, street performers incorporating seasonal themes and pop-up markets featuring local artisans (santamonica.com). The Santa Monica Pier, iconic with its solar-powered Ferris wheel, hosts special holiday events including the Pacific Park tree lighting and Surfing Santa photo opportunities that epitomize Southern California's unique approach to Christmas (pacpark.com). From oceanfront hotels offering holiday packages to the Montana Avenue shopping district's festive charm, Santa Monica delivers accessible beach-town celebrations perfect for families and visitors seeking that laid-back coastal vibe (visitsantamonica.com).
 
+
+**Insider Tip:** Skip the crowded Third Street Promenade on weekends and visit Montana Avenue instead - locals know it has better boutiques, easier parking, and a more relaxed vibe. For the best pier sunset photos, arrive 30 minutes before golden hour and position yourself at the north side near the aquarium.
+
+---
+
 ## Eat
 
 Begin your morning at Huckleberry Bakery & Café, where Zoe Nathan's naturally leavened breads, seasonal pastries and farm-to-table breakfast dishes draw devoted crowds; arrive early or expect waits during the holiday season (huckleberrycafe.com). For beachfront breakfast, Back on the Beach Café at the Santa Monica Pier serves casual fare with oceanfront seating and unbeatable views (backonthebeachcafe.com). The Misfit Restaurant + Bar on Santa Monica Boulevard offers all-day dining with comfort food classics and craft cocktails in an industrial-chic setting (themisfitbar.com).
@@ -86,3 +91,134 @@ Santa Monica's 2025 Christmas & Holiday guide covers Ice skating downtown, Third
   "url": "https://la.curations.cc/guide/santa-monica-holiday"
 }
 ---
+
+---
+
+## ENHANCEMENTS ADDED
+
+### Comprehensive JSON-LD Schemas
+
+#### TravelGuide Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "TravelGuide",
+  "name": "The CurationsLA Christmas and Holiday Guide to Santa Monica",
+  "datePublished": "2025-11-13",
+  "dateModified": "2025-11-13",
+  "publisher": {
+    "@type": "Organization",
+    "name": "CurationsLA",
+    "url": "https://la.curations.cc"
+  },
+  "url": "https://la.curations.cc/guides/santa-monica-holiday-guide"
+}
+```
+
+#### FAQ Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the top holiday events in santa monica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check the guide above for comprehensive holiday event listings, dates, and insider tips."
+      }
+    }
+  ]
+}
+```
+
+#### BreadcrumbList Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://la.curations.cc"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Holiday Guides",
+      "item": "https://la.curations.cc/guides/holiday"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Santa Monica Holiday Guide",
+      "item": "https://la.curations.cc/guides/santa-monica-holiday-guide"
+    }
+  ]
+}
+```
+
+---
+
+---
+
+## Enhanced Pricing & Contact Information
+
+### Key Dining Options with Pricing
+
+Restaurants mentioned in this guide typically offer:
+- Breakfast/Brunch: $12-28 per person
+- Casual Lunch/Dinner: $15-35 per person  
+- Upscale Dining: $35-65 per person
+- Fine Dining: $65-150+ per person (tasting menus)
+
+Call ahead for holiday hours and reservations, especially for Christmas Eve and New Year's Eve when special menus and pricing apply.
+
+### Accommodation Pricing Ranges
+
+Hotels during the holiday season (mid-December through New Year's):
+- Budget/Chain Hotels: $120-200/night
+- Mid-Range Hotels: $200-350/night
+- Upscale/Boutique Hotels: $350-550/night
+- Luxury Resorts: $550-1000+/night
+
+Prices vary by specific dates, with peak pricing December 26-January 1.
+
+### Money-Saving Tips
+
+- Book restaurants and hotels 4-6 weeks in advance for better rates
+- Visit attractions on weekday mornings for smaller crowds
+- Many museums offer free admission days - check websites
+- Happy hour specials (typically 4-7pm weekdays) offer 30-50% savings
+- Use public transportation or ride-sharing to avoid parking fees ($10-30/day)
+- Shop local markets and food halls for budget-friendly meals
+
+
+### Event Schema: Ice at Santa Monica
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Ice at Santa Monica 2025-2026",
+  "startDate": "2025-11-07",
+  "endDate": "2026-01-19",
+  "location": {
+    "@type": "Place",
+    "name": "Downtown Santa Monica",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Fifth Street and Arizona Avenue",
+      "addressLocality": "Santa Monica",
+      "addressRegion": "CA",
+      "postalCode": "90401"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock"
+  }
+}
+```

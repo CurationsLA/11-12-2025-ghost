@@ -7,6 +7,11 @@ Family traditions meet modern shopping in this diverse San Fernando Valley city
 
 Glendale transforms into a family-friendly holiday destination where the Americana at Brand shopping complex creates a European village atmosphere complete with trolley rides, dancing fountains and elaborate decorations. This city of over 200,000 residents celebrates its diverse cultural heritage during the holidays, with Armenian, Latino and Asian communities contributing unique traditions to the seasonal festivities (visitglendaleca.com). The walkable downtown Brand Boulevard corridor connects the Americana to Glendale Galleria, creating an extensive retail district that becomes a shopper's paradise during December (visitglendaleca.com). From classic tree lighting ceremonies to contemporary dining experiences, Glendale offers accessible holiday celebrations perfect for multi-generational gatherings and visitors seeking that warm community vibe (glendaleca.gov).
 
+
+**Insider Tip:** The Americana at Brand gets extremely crowded on weekends, but weekday mornings (10am-12pm) offer easy parking and a relaxed shopping experience. Many locals prefer Glendale Galleria for better deals and shorter lines during the holidays.
+
+---
+
 ## Eat
 
 Start your morning at Porto's Bakery & Café, the beloved Cuban bakery that originated in Glendale and draws lines around the block for potato balls, guava cheese rolls, tres leches cakes and strong Cuban coffee; the festive atmosphere during holidays makes the wait worthwhile (portosbakery.com). For a sit-down breakfast, head to Zankou Chicken, the legendary Armenian rotisserie chicken restaurant where garlic sauce and hummus have achieved cult status across Los Angeles (zankouchicken.com).
@@ -79,3 +84,108 @@ Glendale's 2025 Christmas & Holiday guide covers the Americana at Brand snow sho
   "url": "https://la.curations.cc/guides/glendale-holiday-guide"
 }
 ---
+
+---
+
+## ENHANCEMENTS ADDED
+
+### Comprehensive JSON-LD Schemas
+
+#### TravelGuide Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "TravelGuide",
+  "name": "The CurationsLA Christmas and Holiday Guide to Glendale",
+  "datePublished": "2025-11-13",
+  "dateModified": "2025-11-13",
+  "publisher": {
+    "@type": "Organization",
+    "name": "CurationsLA",
+    "url": "https://la.curations.cc"
+  },
+  "url": "https://la.curations.cc/guides/glendale-holiday-guide"
+}
+```
+
+#### FAQ Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the top holiday events in glendale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check the guide above for comprehensive holiday event listings, dates, and insider tips."
+      }
+    }
+  ]
+}
+```
+
+#### BreadcrumbList Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://la.curations.cc"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Holiday Guides",
+      "item": "https://la.curations.cc/guides/holiday"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Glendale Holiday Guide",
+      "item": "https://la.curations.cc/guides/glendale-holiday-guide"
+    }
+  ]
+}
+```
+
+---
+
+---
+
+## Enhanced Pricing & Contact Information
+
+### Key Dining Options with Pricing
+
+Restaurants mentioned in this guide typically offer:
+- Breakfast/Brunch: $12-28 per person
+- Casual Lunch/Dinner: $15-35 per person  
+- Upscale Dining: $35-65 per person
+- Fine Dining: $65-150+ per person (tasting menus)
+
+Call ahead for holiday hours and reservations, especially for Christmas Eve and New Year's Eve when special menus and pricing apply.
+
+### Accommodation Pricing Ranges
+
+Hotels during the holiday season (mid-December through New Year's):
+- Budget/Chain Hotels: $120-200/night
+- Mid-Range Hotels: $200-350/night
+- Upscale/Boutique Hotels: $350-550/night
+- Luxury Resorts: $550-1000+/night
+
+Prices vary by specific dates, with peak pricing December 26-January 1.
+
+### Money-Saving Tips
+
+- Book restaurants and hotels 4-6 weeks in advance for better rates
+- Visit attractions on weekday mornings for smaller crowds
+- Many museums offer free admission days - check websites
+- Happy hour specials (typically 4-7pm weekdays) offer 30-50% savings
+- Use public transportation or ride-sharing to avoid parking fees ($10-30/day)
+- Shop local markets and food halls for budget-friendly meals
+

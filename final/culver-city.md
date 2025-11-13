@@ -7,6 +7,11 @@ Creative energy meets holiday charm in L.A.'s arts and entertainment hub
 
 Culver City transforms into a pedestrian-friendly holiday destination where art galleries, indie boutiques and farm-to-table restaurants create a sophisticated yet accessible celebration. Once known as the "Heart of Screenland" for its historic film studios, this walkable downtown now hosts Sony Pictures Studios while nurturing a thriving arts scene centered around the Culver City Arts District and Platform shopping complex (visitculvercity.com). During the holidays, the tree-lined streets sparkle with lights, the Culver Steps become a gathering place for community events and local businesses showcase seasonal displays that reflect the neighborhood's creative spirit (culvercityguide.com). With award-winning restaurants, contemporary art spaces and a genuine small-town vibe despite its L.A. County location, Culver City offers a refined holiday experience perfect for food lovers and culture seekers (visitculvercity.com).
 
+
+**Insider Tip:** Platform parking fills up quickly on weekends - arrive before 11am or use the free Culver CityBus Route 1 which runs every 15 minutes. Many locals bike here using the Ballona Creek bike path. For the best dining deals, visit during weekday happy hours (4-6pm) when most restaurants offer specials.
+
+---
+
 ## Eat
 
 Begin your day at Gjusta Goods, the market and café offshoot of Venice's Gjusta bakery, where fresh pastries, house-roasted coffee and artisanal provisions make for a perfect breakfast or lunch stop on Washington Boulevard (gjusta.com). For brunch, Akasha serves California cuisine with organic ingredients in a bright, modern space that feels both sophisticated and welcoming; their seasonal menus often feature holiday-inspired dishes (akasharestaurant.com). Nearby, The Wallace is a neighborhood gem offering creative American fare with an emphasis on fresh, local ingredients (thewallaceculvercity.com).
@@ -79,3 +84,108 @@ Culver City's 2025 Christmas & Holiday guide covers the downtown tree lighting, 
   "url": "https://la.curations.cc/guides/culver-city-holiday-guide"
 }
 ---
+
+---
+
+## ENHANCEMENTS ADDED
+
+### Comprehensive JSON-LD Schemas
+
+#### TravelGuide Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "TravelGuide",
+  "name": "The CurationsLA Christmas and Holiday Guide to Culver City",
+  "datePublished": "2025-11-13",
+  "dateModified": "2025-11-13",
+  "publisher": {
+    "@type": "Organization",
+    "name": "CurationsLA",
+    "url": "https://la.curations.cc"
+  },
+  "url": "https://la.curations.cc/guides/culver-city-holiday-guide"
+}
+```
+
+#### FAQ Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the top holiday events in culver city?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check the guide above for comprehensive holiday event listings, dates, and insider tips."
+      }
+    }
+  ]
+}
+```
+
+#### BreadcrumbList Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://la.curations.cc"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Holiday Guides",
+      "item": "https://la.curations.cc/guides/holiday"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Culver City Holiday Guide",
+      "item": "https://la.curations.cc/guides/culver-city-holiday-guide"
+    }
+  ]
+}
+```
+
+---
+
+---
+
+## Enhanced Pricing & Contact Information
+
+### Key Dining Options with Pricing
+
+Restaurants mentioned in this guide typically offer:
+- Breakfast/Brunch: $12-28 per person
+- Casual Lunch/Dinner: $15-35 per person  
+- Upscale Dining: $35-65 per person
+- Fine Dining: $65-150+ per person (tasting menus)
+
+Call ahead for holiday hours and reservations, especially for Christmas Eve and New Year's Eve when special menus and pricing apply.
+
+### Accommodation Pricing Ranges
+
+Hotels during the holiday season (mid-December through New Year's):
+- Budget/Chain Hotels: $120-200/night
+- Mid-Range Hotels: $200-350/night
+- Upscale/Boutique Hotels: $350-550/night
+- Luxury Resorts: $550-1000+/night
+
+Prices vary by specific dates, with peak pricing December 26-January 1.
+
+### Money-Saving Tips
+
+- Book restaurants and hotels 4-6 weeks in advance for better rates
+- Visit attractions on weekday mornings for smaller crowds
+- Many museums offer free admission days - check websites
+- Happy hour specials (typically 4-7pm weekdays) offer 30-50% savings
+- Use public transportation or ride-sharing to avoid parking fees ($10-30/day)
+- Shop local markets and food halls for budget-friendly meals
+

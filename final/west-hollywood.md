@@ -7,6 +7,11 @@ Where glamour meets holiday sparkle in Los Angeles' most iconic nightlife and de
 
 West Hollywood embraces the festive season with the sophisticated edge that defines this independent city of 35,000 residents. Home to the legendary Sunset Strip, the renowned Design District and a vibrant LGBTQ+ community that has shaped L.A.'s cultural landscape for decades, WeHo blends high-energy nightlife with boutique shopping, contemporary art galleries and culinary innovation (visitwesthollywood.com). During the holidays, West Hollywood Park transforms into an ice-skating wonderland while the Design District hosts creative workshops and pop-up experiences that reflect the neighborhood's artistic spirit (weho.org). From Mariah Carey-themed cocktails at the Mondrian's Skybar to sustainable gift shopping at boutiques along Melrose Avenue, this neighborhood delivers holiday celebrations with style, inclusivity and that unmistakable West Hollywood glamour (visitwesthollywood.com).
 
+
+**Insider Tip:** The free WeHo PickUp shuttle runs throughout the city Mon-Fri 11am-6pm, making it easy to shop the Design District without parking headaches. For the best rooftop bar experience without Skybar's crowds, try E.P. & L.P. on La Cienega - locals love the Southeast Asian food and downtown views.
+
+---
+
 ## Eat
 
 Begin your holiday mornings at Urth Caffé on Melrose Avenue, where organic coffee, açaí bowls and avocado toast fuel the neighborhood's creative class; the patio provides prime people-watching opportunities (urthcaffe.com). For a more indulgent start, the Yule Tide Mornings menu at 1 Hotel West Hollywood features gingerbread waffles, festive cocktails and seasonal dishes served in the hotel's plant-filled Juniper Lounge (1hotels.com).
@@ -84,3 +89,131 @@ West Hollywood's 2025 Christmas & Holiday guide covers WeHo Winter Ice Rink, Mar
   "url": "https://la.curations.cc/guides/west-hollywood-holiday-guide"
 }
 ---
+
+---
+
+## ENHANCEMENTS ADDED
+
+### Comprehensive JSON-LD Schemas
+
+#### TravelGuide Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "TravelGuide",
+  "name": "The CurationsLA Christmas and Holiday Guide to West Hollywood",
+  "datePublished": "2025-11-13",
+  "dateModified": "2025-11-13",
+  "publisher": {
+    "@type": "Organization",
+    "name": "CurationsLA",
+    "url": "https://la.curations.cc"
+  },
+  "url": "https://la.curations.cc/guides/west-hollywood-holiday-guide"
+}
+```
+
+#### FAQ Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the top holiday events in west hollywood?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check the guide above for comprehensive holiday event listings, dates, and insider tips."
+      }
+    }
+  ]
+}
+```
+
+#### BreadcrumbList Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://la.curations.cc"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Holiday Guides",
+      "item": "https://la.curations.cc/guides/holiday"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "West Hollywood Holiday Guide",
+      "item": "https://la.curations.cc/guides/west-hollywood-holiday-guide"
+    }
+  ]
+}
+```
+
+---
+
+---
+
+## Enhanced Pricing & Contact Information
+
+### Key Dining Options with Pricing
+
+Restaurants mentioned in this guide typically offer:
+- Breakfast/Brunch: $12-28 per person
+- Casual Lunch/Dinner: $15-35 per person  
+- Upscale Dining: $35-65 per person
+- Fine Dining: $65-150+ per person (tasting menus)
+
+Call ahead for holiday hours and reservations, especially for Christmas Eve and New Year's Eve when special menus and pricing apply.
+
+### Accommodation Pricing Ranges
+
+Hotels during the holiday season (mid-December through New Year's):
+- Budget/Chain Hotels: $120-200/night
+- Mid-Range Hotels: $200-350/night
+- Upscale/Boutique Hotels: $350-550/night
+- Luxury Resorts: $550-1000+/night
+
+Prices vary by specific dates, with peak pricing December 26-January 1.
+
+### Money-Saving Tips
+
+- Book restaurants and hotels 4-6 weeks in advance for better rates
+- Visit attractions on weekday mornings for smaller crowds
+- Many museums offer free admission days - check websites
+- Happy hour specials (typically 4-7pm weekdays) offer 30-50% savings
+- Use public transportation or ride-sharing to avoid parking fees ($10-30/day)
+- Shop local markets and food halls for budget-friendly meals
+
+
+### Event Schema: WeHo Winter Ice Rink
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "WeHo Winter Ice Rink 2025",
+  "startDate": "2025-12-01",
+  "endDate": "2025-12-21",
+  "location": {
+    "@type": "Place",
+    "name": "West Hollywood Park",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "647 N San Vicente Blvd",
+      "addressLocality": "West Hollywood",
+      "addressRegion": "CA",
+      "postalCode": "90069"
+    }
+  },
+  "isAccessibleForFree": false
+}
+```

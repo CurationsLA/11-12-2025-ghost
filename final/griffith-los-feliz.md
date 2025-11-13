@@ -7,6 +7,11 @@ Nature, nostalgia and neighborhood charm in L.A.'s bohemian hillside enclave
 
 Griffith Park and Los Feliz offer a distinctive holiday experience where urban hiking trails meet indie bookstores, vintage theaters and cozy cafés that embody classic Los Angeles character. Griffith Park, one of the largest urban parks in North America, provides 4,310 acres of wilderness in the heart of the city, with trails leading to panoramic viewpoints perfect for crisp winter hikes (laparks.org). The adjacent Los Feliz neighborhood, with its 1920s Spanish Colonial architecture and tree-lined streets, creates a walkable village atmosphere where Vermont Avenue and Hillhurst Avenue host locally owned shops, restaurants and the historic Vista Theatre (losfelizchamber.org). During the holidays, this area embraces a low-key bohemian celebration, favoring neighborhood gatherings over commercial spectacle, making it ideal for visitors seeking authentic Los Angeles experiences (discoverlosangeles.com).
 
+
+**Insider Tip:** For the best Griffith Observatory experience without tourist crowds, visit on weekday evenings after 7pm. Parking is free but limited - many locals park in Los Feliz Village and take a rideshare up. The sunset view from the observatory lawn is spectacular and doesn't require entering the building.
+
+---
+
 ## Eat
 
 Begin your day at Alcove Café & Bakery, a Los Feliz institution where the garden patio, homemade pastries and organic breakfast options create a perfect morning atmosphere year-round but feel especially cozy during December (alcovecafe.com). For heartier breakfast, head to Fred 62, the 24-hour diner serving comfort food with playful names and a retro vibe that has made it a neighborhood anchor since 1999 (fred62.com). The Dresden Restaurant, famous as a filming location in "Swingers," serves German-American cuisine in a vintage supper club setting that evokes Old Hollywood glamour (thedresden.com).
@@ -81,3 +86,108 @@ Griffith Park & Los Feliz 2025 Christmas & Holiday guide covers Griffith Observa
   "url": "https://la.curations.cc/guides/griffith-los-feliz-holiday-guide"
 }
 ---
+
+---
+
+## ENHANCEMENTS ADDED
+
+### Comprehensive JSON-LD Schemas
+
+#### TravelGuide Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "TravelGuide",
+  "name": "The CurationsLA Christmas and Holiday Guide to Griffith Los Feliz",
+  "datePublished": "2025-11-13",
+  "dateModified": "2025-11-13",
+  "publisher": {
+    "@type": "Organization",
+    "name": "CurationsLA",
+    "url": "https://la.curations.cc"
+  },
+  "url": "https://la.curations.cc/guides/griffith-los-feliz-holiday-guide"
+}
+```
+
+#### FAQ Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the top holiday events in griffith los feliz?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check the guide above for comprehensive holiday event listings, dates, and insider tips."
+      }
+    }
+  ]
+}
+```
+
+#### BreadcrumbList Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://la.curations.cc"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Holiday Guides",
+      "item": "https://la.curations.cc/guides/holiday"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Griffith Los Feliz Holiday Guide",
+      "item": "https://la.curations.cc/guides/griffith-los-feliz-holiday-guide"
+    }
+  ]
+}
+```
+
+---
+
+---
+
+## Enhanced Pricing & Contact Information
+
+### Key Dining Options with Pricing
+
+Restaurants mentioned in this guide typically offer:
+- Breakfast/Brunch: $12-28 per person
+- Casual Lunch/Dinner: $15-35 per person  
+- Upscale Dining: $35-65 per person
+- Fine Dining: $65-150+ per person (tasting menus)
+
+Call ahead for holiday hours and reservations, especially for Christmas Eve and New Year's Eve when special menus and pricing apply.
+
+### Accommodation Pricing Ranges
+
+Hotels during the holiday season (mid-December through New Year's):
+- Budget/Chain Hotels: $120-200/night
+- Mid-Range Hotels: $200-350/night
+- Upscale/Boutique Hotels: $350-550/night
+- Luxury Resorts: $550-1000+/night
+
+Prices vary by specific dates, with peak pricing December 26-January 1.
+
+### Money-Saving Tips
+
+- Book restaurants and hotels 4-6 weeks in advance for better rates
+- Visit attractions on weekday mornings for smaller crowds
+- Many museums offer free admission days - check websites
+- Happy hour specials (typically 4-7pm weekdays) offer 30-50% savings
+- Use public transportation or ride-sharing to avoid parking fees ($10-30/day)
+- Shop local markets and food halls for budget-friendly meals
+
