@@ -1317,7 +1317,7 @@ mark, ::selection {
 .post-content blockquote,
 .page-content blockquote {
   margin: 2rem 0;
-  padding: 1.5rem 1.5rem 1.5rem 3rem;   /* Extra left padding for quote mark */
+  padding: 1.5rem 1.5rem 1.5rem 4rem;   /* Increased left padding to 4rem to prevent quote bleed */
   border: 4px solid #000;
   background: var(--hot-pink);          /* Hot pink background */
   color: #fff;                          /* White font */
@@ -1335,7 +1335,7 @@ mark, ::selection {
   line-height: 1;
   position: absolute;
   top: 0.5rem;
-  left: 0.5rem;
+  left: 0.75rem;                        /* Moved slightly right for better positioning */
   color: var(--lime);                   /* Green quote mark */
   opacity: 1;
 }
@@ -1656,7 +1656,7 @@ mark, ::selection {
   line-height: 1.3;
   text-align: left;
   margin: 3rem auto;
-  padding: 2rem 1rem 2rem 3.5rem;       /* Extra left padding for quote mark */
+  padding: 2rem 2rem 2rem 5rem;         /* Increased left padding to 5rem to prevent quote bleed */
   border: 4px solid #000;               /* Box border */
   background: var(--hot-pink);          /* Hot pink background */
   color: #fff;                          /* White font */
@@ -1671,8 +1671,8 @@ mark, ::selection {
 .page-content .pull-quote::before {
   content: '"';
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 1.5rem;
+  left: 1.25rem;                        /* Adjusted positioning for better spacing */
   font-size: 4rem;
   font-weight: 900;
   line-height: 1;
@@ -1835,14 +1835,39 @@ mark, ::selection {
 @media (max-width: 768px) {
   .post-content blockquote,
   .page-content blockquote {
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 3.5rem;     /* Maintain left padding for quote mark */
     font-size: 1rem;
     box-shadow: 4px 4px 0 #000;
   }
 
+  .post-content blockquote::before {
+    font-size: 3rem;                    /* Smaller quote mark on mobile */
+    left: 0.5rem;
+  }
+
   .pull-quote {
     font-size: 1.5rem;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1.5rem 1.5rem 4rem; /* Maintain left padding for quote mark */
+  }
+
+  .pull-quote::before {
+    font-size: 3rem;                    /* Smaller quote mark on mobile */
+    left: 0.75rem;
+    top: 1rem;
+  }
+
+  /* Media caption sizing for mobile */
+  .post-content figcaption,
+  .page-content figcaption {
+    font-size: 0.9rem;                  /* Smaller than desktop 1.1rem */
+    font-weight: 700;                   /* Lighter than desktop 800 */
+    padding: 0.75rem 1rem;              /* Reduced padding */
+  }
+
+  .post-content figcaption a,
+  .page-content figcaption a {
+    font-size: 0.95rem;                 /* Slightly bigger than caption text */
+    font-weight: 800;                   /* Lighter than desktop 900 */
   }
 
   .post-content ol.step-list li {
