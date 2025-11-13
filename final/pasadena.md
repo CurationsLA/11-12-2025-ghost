@@ -81,7 +81,6 @@ Following the parade, the legendary Rose Bowl Stadium hosts college football's "
 
 ### Cultural Attractions
 
-### Cultural Attractions
 
 **The Norton Simon Museum** (411 W Colorado Blvd) offers a serene holiday experience with world-class European and Asian art collections displayed in sculpture gardens decorated with seasonal touches. Open Wed-Mon 12pm-5pm; $15 adults, $12 seniors, free for students and under 18. Extended December hours and special evening programs (nortonsimon.org).
 
