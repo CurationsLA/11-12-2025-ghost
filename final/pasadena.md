@@ -43,7 +43,6 @@ For a classic brunch experience, head to **The Raymond 1886** (1250 S Fair Oaks 
 
 ### Afternoon Tea & Special Dining
 
-### Afternoon Tea & Special Dining
 
 **The Langham Huntington's Lobby Lounge** offers afternoon tea, a beloved Pasadena tradition featuring three-tiered presentations of finger sandwiches, scones with Devonshire cream and seasonal pastries served in an elegant setting overlooking the Picture Bridge. Seatings daily at 2pm and 4pm; $85 per person, $95 with champagne. Reservations essential at (626) 568-3900 (langhamhotels.com).
 
