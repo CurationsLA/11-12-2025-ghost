@@ -43,7 +43,7 @@ For something more casual, **Nate 'n Al Delicatessen** has been serving classic 
 
 Afternoon tea at **The Peninsula Beverly Hills** presents a refined holiday tradition, with finger sandwiches, scones with clotted cream and seasonal pastries served in the elegant Living Room lounge; reservations are essential during December (peninsula.com). The hotel also offers a special "Holiday Tea & Hollywood Style" package that includes celebrity stylist Catherine Bloom in your suite while enjoying The Peninsula's signature Afternoon Tea—pure Beverly Hills luxury (peninsula.com).
 
-### Christmas Eve Dining (December 24, 2025)
+### Christmas Eve Dining (Dec 24, 2025)
 
 **THE Blvd at Beverly Wilshire** offers Christmas Eve dining from 6pm to 10pm with an evening amid festive décor, solo pianist, and a special four-course set menu featuring seasonal favourites like French onion soup and tender herb-crusted lamb loin, ending with holiday-inspired ginger crème brûlée. Priced at $180 per adult and $65 for children 6 to 12 years (fourseasons.com/beverlywilshire).
 
@@ -57,7 +57,7 @@ Afternoon tea at **The Peninsula Beverly Hills** presents a refined holiday trad
 
 **Scarpetta** will host an à la carte dinner service from its festive holiday menu on Christmas Eve [TEMPLATE: hours and pricing].
 
-### Christmas Day Dining (December 25, 2025)
+### Christmas Day Dining (Dec 25, 2025)
 
 **The Belvedere at The Peninsula Beverly Hills** offers a gourmet three-course holiday dinner including Winter Truffle Risotto, Wagyu Beef Filet, and plant-based dishes. The Peninsula also features their "Twelve Days of Peninsula" with international holiday sweets representing each of the 12 Peninsula hotels worldwide (peninsula.com).
 
